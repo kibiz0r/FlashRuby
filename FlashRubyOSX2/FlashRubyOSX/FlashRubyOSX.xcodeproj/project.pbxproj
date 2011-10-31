@@ -1,0 +1,226 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		89C8B282145EFAFC000183D1 /* FlashRubyOSX.h in Headers */ = {isa = PBXBuildFile; fileRef = 89C8B281145EFAFC000183D1 /* FlashRubyOSX.h */; };
+		89C8B285145EFAFC000183D1 /* FlashRubyOSX.c in Sources */ = {isa = PBXBuildFile; fileRef = 89C8B284145EFAFC000183D1 /* FlashRubyOSX.c */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		89C8B27A145EFAFC000183D1 /* FlashRubyOSX.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = FlashRubyOSX.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		89C8B27E145EFAFC000183D1 /* FlashRubyOSX-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FlashRubyOSX-Prefix.pch"; sourceTree = "<group>"; };
+		89C8B27F145EFAFC000183D1 /* FlashRubyOSXProj.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = FlashRubyOSXProj.xcconfig; sourceTree = "<group>"; };
+		89C8B280145EFAFC000183D1 /* FlashRubyOSXTarget.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = FlashRubyOSXTarget.xcconfig; sourceTree = "<group>"; };
+		89C8B281145EFAFC000183D1 /* FlashRubyOSX.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FlashRubyOSX.h; sourceTree = "<group>"; };
+		89C8B284145EFAFC000183D1 /* FlashRubyOSX.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = FlashRubyOSX.c; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		89C8B277145EFAFC000183D1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		89C8B26F145EFAFC000183D1 = {
+			isa = PBXGroup;
+			children = (
+				89C8B27C145EFAFC000183D1 /* FlashRubyOSX */,
+				89C8B27B145EFAFC000183D1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		89C8B27B145EFAFC000183D1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				89C8B27A145EFAFC000183D1 /* FlashRubyOSX.dylib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		89C8B27C145EFAFC000183D1 /* FlashRubyOSX */ = {
+			isa = PBXGroup;
+			children = (
+				89C8B27F145EFAFC000183D1 /* FlashRubyOSXProj.xcconfig */,
+				89C8B280145EFAFC000183D1 /* FlashRubyOSXTarget.xcconfig */,
+				89C8B281145EFAFC000183D1 /* FlashRubyOSX.h */,
+				89C8B284145EFAFC000183D1 /* FlashRubyOSX.c */,
+				89C8B27D145EFAFC000183D1 /* Supporting Files */,
+			);
+			path = FlashRubyOSX;
+			sourceTree = "<group>";
+		};
+		89C8B27D145EFAFC000183D1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				89C8B27E145EFAFC000183D1 /* FlashRubyOSX-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		89C8B278145EFAFC000183D1 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				89C8B282145EFAFC000183D1 /* FlashRubyOSX.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		89C8B279145EFAFC000183D1 /* FlashRubyOSX */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 89C8B288145EFAFC000183D1 /* Build configuration list for PBXNativeTarget "FlashRubyOSX" */;
+			buildPhases = (
+				89C8B276145EFAFC000183D1 /* Sources */,
+				89C8B277145EFAFC000183D1 /* Frameworks */,
+				89C8B278145EFAFC000183D1 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FlashRubyOSX;
+			productName = FlashRubyOSX;
+			productReference = 89C8B27A145EFAFC000183D1 /* FlashRubyOSX.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		89C8B271145EFAFC000183D1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = "Atomic Object";
+			};
+			buildConfigurationList = 89C8B274145EFAFC000183D1 /* Build configuration list for PBXProject "FlashRubyOSX" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 89C8B26F145EFAFC000183D1;
+			productRefGroup = 89C8B27B145EFAFC000183D1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				89C8B279145EFAFC000183D1 /* FlashRubyOSX */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		89C8B276145EFAFC000183D1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				89C8B285145EFAFC000183D1 /* FlashRubyOSX.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		89C8B286145EFAFC000183D1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = ../../air3beta/include;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		89C8B287145EFAFC000183D1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = ../../air3beta/include;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		89C8B289145EFAFC000183D1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CONFIGURATION_TEMP_DIR = "$(PROJECT_TEMP_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SYMROOT = build;
+			};
+			name = Debug;
+		};
+		89C8B28A145EFAFC000183D1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CONFIGURATION_TEMP_DIR = "$(PROJECT_TEMP_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SYMROOT = build;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		89C8B274145EFAFC000183D1 /* Build configuration list for PBXProject "FlashRubyOSX" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				89C8B286145EFAFC000183D1 /* Debug */,
+				89C8B287145EFAFC000183D1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		89C8B288145EFAFC000183D1 /* Build configuration list for PBXNativeTarget "FlashRubyOSX" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				89C8B289145EFAFC000183D1 /* Debug */,
+				89C8B28A145EFAFC000183D1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 89C8B271145EFAFC000183D1 /* Project object */;
+}
