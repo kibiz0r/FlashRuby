@@ -1,0 +1,8 @@
+#!/Users/kibiyama/.rvm/rubies/ruby-1.9.2-p290/bin/ruby
+require "json"
+
+def process(instructions)
+  instructions.last[1..-1]
+end
+
+puts process(RubyVM::InstructionSequence.compile(ARGV[0]).to_a).to_json
