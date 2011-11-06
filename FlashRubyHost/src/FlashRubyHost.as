@@ -1,2 +1,13 @@
-﻿package{	import flash.display.Sprite;	import flash.external.ExtensionContext;	import flash.system.System;		import com.yeticgi.nativeExtensions.FlashRuby;
-		public class FlashRubyHost extends Sprite	{		public function FlashRubyHost()		{			var flashRuby:FlashRuby = new FlashRuby();		}	}}
+package
+{
+	import com.yeticgi.flashRuby.FlashRuby;
+	import flash.display.Sprite;
+
+	public class FlashRubyHost extends Sprite
+	{
+		public function FlashRubyHost()
+		{
+			var flashRuby:FlashRuby = new FlashRuby();
+		}
+	}
+}
