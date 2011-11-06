@@ -11,6 +11,7 @@
 		89A3885D145E72F700E6C61A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 89A3885B145E72F700E6C61A /* InfoPlist.strings */; };
 		89A38861145E72F700E6C61A /* FlashRuby.c in Sources */ = {isa = PBXBuildFile; fileRef = 89A38860145E72F700E6C61A /* FlashRuby.c */; };
 		89A38869145E758D00E6C61A /* Adobe AIR.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89A38868145E758D00E6C61A /* Adobe AIR.framework */; };
+		89D446C514663266005F52C5 /* libruby-static.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 89D446C414663266005F52C5 /* libruby-static.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		89A3885F145E72F700E6C61A /* FlashRuby.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FlashRuby.h; sourceTree = "<group>"; };
 		89A38860145E72F700E6C61A /* FlashRuby.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = FlashRuby.c; sourceTree = "<group>"; };
 		89A38868145E758D00E6C61A /* Adobe AIR.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "Adobe AIR.framework"; path = "../../../../../../Library/Frameworks/Adobe AIR.framework"; sourceTree = "<group>"; };
+		89D446C414663266005F52C5 /* libruby-static.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libruby-static.a"; path = "../ruby/libruby-static.a"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +34,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89D446C514663266005F52C5 /* libruby-static.a in Frameworks */,
 				89A38853145E72F700E6C61A /* Cocoa.framework in Frameworks */,
 				89A38869145E758D00E6C61A /* Adobe AIR.framework in Frameworks */,
 			);
@@ -43,6 +46,7 @@
 		89A38841145E727B00E6C61A = {
 			isa = PBXGroup;
 			children = (
+				89D446C414663266005F52C5 /* libruby-static.a */,
 				89A38858145E72F700E6C61A /* FlashRuby */,
 				89A38851145E72F700E6C61A /* Frameworks */,
 				89A38850145E72F700E6C61A /* Products */,
@@ -235,8 +239,18 @@
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"../ruby/.ext/include/i386-darwin11.2.0",
+					../ruby,
+					../ruby/include,
+					../air3beta/include,
+				);
 				INFOPLIST_FILE = "FlashRuby/FlashRuby-Info.plist";
 				INSTALL_PATH = "$(HOME)/Library/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../ruby\"",
+				);
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				ONLY_ACTIVE_ARCH = NO;
 				ORDER_FILE = "";
@@ -266,8 +280,18 @@
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"../ruby/.ext/include/i386-darwin11.2.0",
+					../ruby,
+					../ruby/include,
+					../air3beta/include,
+				);
 				INFOPLIST_FILE = "FlashRuby/FlashRuby-Info.plist";
 				INSTALL_PATH = "$(HOME)/Library/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../ruby\"",
+				);
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				ORDER_FILE = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";

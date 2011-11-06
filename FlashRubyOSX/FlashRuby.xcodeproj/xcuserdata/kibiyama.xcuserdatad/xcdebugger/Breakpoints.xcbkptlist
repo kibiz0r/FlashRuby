@@ -15,5 +15,19 @@
          startingLineNumber = "1"
          endingLineNumber = "1">
       </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "Yes"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         isPathRelative = "1"
+         filePath = "FlashRuby/FlashRuby.c"
+         timestampString = "342245459.924973"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "26"
+         endingLineNumber = "26"
+         landmarkName = "FLASH_METHOD()"
+         landmarkType = "7">
+      </FileBreakpoint>
    </FileBreakpoints>
 </Bucket>

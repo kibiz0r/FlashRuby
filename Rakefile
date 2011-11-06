@@ -1,3 +1,25 @@
+namespace :ruby do
+  task :autoconf do
+    cd "ruby" do
+      sh "autoconf"
+    end
+  end
+
+  task :configure do
+    cd "ruby" do
+      sh "./configure --with-gcc=gcc-4.2 --with-arch=i386"
+    end
+  end
+
+  task :make do
+    cd "ruby" do
+      sh "make"
+    end
+  end
+end
+
+task :ruby => ["ruby:autoconf", "ruby:configure", "ruby:make"]
+
 desc "prints notes about AIR 3.0 Beta setup"
 task :air3beta do
   steps = <<-END

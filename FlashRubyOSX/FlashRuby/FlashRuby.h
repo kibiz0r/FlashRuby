@@ -2,6 +2,9 @@
 #define FLASH_RUBY_H
 
 #include "FlashRuntimeExtensions.h"
+#include "ruby.h"
+#include "internal.h"
+#include "vm_core.h"
 
 #define FLASH_METHOD(name) \
   FREObject (name)(FREContext ctx, void* funcData, uint32_t argc, FREObject argv[])
