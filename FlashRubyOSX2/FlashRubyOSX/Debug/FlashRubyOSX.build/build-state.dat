@@ -1,60 +1,0 @@
-TFlashRubyOSX
-v3
-r1
-cCheck dependencies
-cCompileC Debug/FlashRubyOSX.build/Objects-normal/x86_64/FlashRubyOSX.o /Users/kibiyama/git/FlashRuby/FlashRubyOSX2/FlashRubyOSX/FlashRubyOSX/FlashRubyOSX.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler
-cLd /Users/kibiyama/Library/Developer/Xcode/DerivedData/FlashRubyOSX-dlprnkduybvznzbxrqljkjecjquy/Build/Products/Debug/FlashRubyOSX.dylib normal x86_64
-
-N/Developer/SDKs/MacOSX10.7.sdk
-c000000004E1106D400000000000000EE
-t1309738708
-s238
-
-N/Users/kibiyama/Library/Developer/Xcode/DerivedData/FlashRubyOSX-dlprnkduybvznzbxrqljkjecjquy/Build/Products/Debug/FlashRubyOSX.dylib
-t1320076385
-s4704
-
-N/Users/kibiyama/git/FlashRuby/FlashRubyOSX2/FlashRubyOSX/Debug/FlashRubyOSX.build/Objects-normal/x86_64/FlashRubyOSX.LinkFileList
-c000000004EAEC4D20000000000000077
-t1320076498
-s119
-
-N/Users/kibiyama/git/FlashRuby/FlashRubyOSX2/FlashRubyOSX/Debug/FlashRubyOSX.build/Objects-normal/x86_64/FlashRubyOSX.o
-t2
-s0
-
-N/Users/kibiyama/git/FlashRuby/FlashRubyOSX2/FlashRubyOSX/FlashRubyOSX/FlashRubyOSX.c
-c000000004EAEC460000000000000020E
-t1320076384
-s526
-
-CBuild AST from /Users/kibiyama/git/FlashRuby/FlashRubyOSX2/FlashRubyOSX/FlashRubyOSX/FlashRubyOSX.c
-r0
-
-CCheck dependencies
-r0
-lSLF03#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependenciesb7eb2d52fc5eb441^b20e3352fc5eb441^---0#1#0#--18"Check dependencies
-
-CCompileC Debug/FlashRubyOSX.build/Objects-normal/x86_64/FlashRubyOSX.o /Users/kibiyama/git/FlashRuby/FlashRubyOSX2/FlashRubyOSX/FlashRubyOSX/FlashRubyOSX.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler
-s341769298.204534
-e341769298.279451
-r1
-xCompileC
-xDebug/FlashRubyOSX.build/Objects-normal/x86_64/FlashRubyOSX.o
-x/Users/kibiyama/git/FlashRuby/FlashRubyOSX2/FlashRubyOSX/FlashRubyOSX/FlashRubyOSX.c
-xnormal
-xx86_64
-xc
-xcom.apple.compilers.llvm.clang.1_0.compiler
-lSLF03#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection92"Compile /Users/kibiyama/git/FlashRuby/FlashRubyOSX2/FlashRubyOSX/FlashRubyOSX/FlashRubyOSX.c03773452fc5eb441^7d064c52fc5eb441^---0#0#0#-19%DVTDocumentLocation2@100"file://localhost/Users/kibiyama/git/FlashRuby/FlashRubyOSX2/FlashRubyOSX/FlashRubyOSX/FlashRubyOSX.c0000000000000000^2016"CompileC Debug/FlashRubyOSX.build/Objects-normal/x86_64/FlashRubyOSX.o FlashRubyOSX/FlashRubyOSX.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/kibiyama/git/FlashRuby/FlashRubyOSX2/FlashRubyOSX    setenv LANG en_US.US-ASCII    /Developer/usr/bin/clang -x c -arch x86_64 -fmessage-length=0 -fdiagnostics-print-source-range-info -fdiagnostics-show-category=id -fdiagnostics-parseable-fixits -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wmissing-prototypes -Wreturn-type -Wparentheses -Wswitch -Wno-unused-parameter -Wunused-variable -Wunused-value -Wshorten-64-to-32 -DDEBUG=1 -isysroot /Developer/SDKs/MacOSX10.7.sdk -fasm-blocks -mmacosx-version-min=10.7 -gdwarf-2 -iquote /Users/kibiyama/git/FlashRuby/FlashRubyOSX2/FlashRubyOSX/Debug/FlashRubyOSX.build/FlashRubyOSX-generated-files.hmap -I/Users/kibiyama/git/FlashRuby/FlashRubyOSX2/FlashRubyOSX/Debug/FlashRubyOSX.build/FlashRubyOSX-own-target-headers.hmap -I/Users/kibiyama/git/FlashRuby/FlashRubyOSX2/FlashRubyOSX/Debug/FlashRubyOSX.build/FlashRubyOSX-all-target-headers.hmap -iquote /Users/kibiyama/git/FlashRuby/FlashRubyOSX2/FlashRubyOSX/Debug/FlashRubyOSX.build/FlashRubyOSX-project-headers.hmap -I/Users/kibiyama/Library/Developer/Xcode/DerivedData/FlashRubyOSX-dlprnkduybvznzbxrqljkjecjquy/Build/Products/Debug/include -I../../air3beta/include -I/Users/kibiyama/git/FlashRuby/FlashRubyOSX2/FlashRubyOSX/Debug/FlashRubyOSX.build/DerivedSources/x86_64 -I/Users/kibiyama/git/FlashRuby/FlashRubyOSX2/FlashRubyOSX/Debug/FlashRubyOSX.build/DerivedSources -F/Users/kibiyama/Library/Developer/Xcode/DerivedData/FlashRubyOSX-dlprnkduybvznzbxrqljkjecjquy/Build/Products/Debug -MMD -MT dependencies -MF /Users/kibiyama/git/FlashRuby/FlashRubyOSX2/FlashRubyOSX/Debug/FlashRubyOSX.build/Objects-normal/x86_64/FlashRubyOSX.d -c /Users/kibiyama/git/FlashRuby/FlashRubyOSX2/FlashRubyOSX/FlashRubyOSX/FlashRubyOSX.c -o /Users/kibiyama/git/FlashRuby/FlashRubyOSX2/FlashRubyOSX/Debug/FlashRubyOSX.build/Objects-normal/x86_64/FlashRubyOSX.o
-
-CLd /Users/kibiyama/Library/Developer/Xcode/DerivedData/FlashRubyOSX-dlprnkduybvznzbxrqljkjecjquy/Build/Products/Debug/FlashRubyOSX.dylib normal x86_64
-s341769298.296120
-e341769298.347602
-r1
-xLd
-x/Users/kibiyama/Library/Developer/Xcode/DerivedData/FlashRubyOSX-dlprnkduybvznzbxrqljkjecjquy/Build/Products/Debug/FlashRubyOSX.dylib
-xnormal
-xx86_64
-lSLF03#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection138"Link /Users/kibiyama/Library/Developer/Xcode/DerivedData/FlashRubyOSX-dlprnkduybvznzbxrqljkjecjquy/Build/Products/Debug/FlashRubyOSX.dylib3fe24b52fc5eb441^6bba5a52fc5eb441^---0#0#0#--995"Ld /Users/kibiyama/Library/Developer/Xcode/DerivedData/FlashRubyOSX-dlprnkduybvznzbxrqljkjecjquy/Build/Products/Debug/FlashRubyOSX.dylib normal x86_64    cd /Users/kibiyama/git/FlashRuby/FlashRubyOSX2/FlashRubyOSX    setenv MACOSX_DEPLOYMENT_TARGET 10.7    /Developer/usr/bin/clang -arch x86_64 -dynamiclib -isysroot /Developer/SDKs/MacOSX10.7.sdk -L/Users/kibiyama/Library/Developer/Xcode/DerivedData/FlashRubyOSX-dlprnkduybvznzbxrqljkjecjquy/Build/Products/Debug -F/Users/kibiyama/Library/Developer/Xcode/DerivedData/FlashRubyOSX-dlprnkduybvznzbxrqljkjecjquy/Build/Products/Debug -filelist /Users/kibiyama/git/FlashRuby/FlashRubyOSX2/FlashRubyOSX/Debug/FlashRubyOSX.build/Objects-normal/x86_64/FlashRubyOSX.LinkFileList -install_name /usr/local/lib/FlashRubyOSX.dylib -mmacosx-version-min=10.7 -single_module -compatibility_version 1 -current_version 1 -o /Users/kibiyama/Library/Developer/Xcode/DerivedData/FlashRubyOSX-dlprnkduybvznzbxrqljkjecjquy/Build/Products/Debug/FlashRubyOSX.dylib
-
