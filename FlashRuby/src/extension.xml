@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<extension xmlns="http://ns.adobe.com/air/extension/2.5"> 
+<extension xmlns="http://ns.adobe.com/air/extension/3.3"> 
     <id>com.yeticgi.FlashRuby</id> 
     <versionNumber>0.0.1</versionNumber> 
     <platforms> 
