@@ -1,0 +1,101 @@
+#!/usr/bin/env ruby
+
+class FakeFDB
+
+  def initialize
+    validate_argv
+    str = "Adobe fdb (Flash Player Debugger) [build 16076]\n"
+    str << "Copyright (c) 2004-2007 Adobe, Inc. All rights reserved.\n"
+    str << "(fdb) "
+    printf str
+    gather_input
+  end
+
+  def gather_input
+    $stdout.flush
+    command = $stdin.gets.chomp!
+    parts = command.split(' ')
+    name = parts.shift
+
+    case name
+    when "run"
+      handle_run parts
+    when "break"
+      handle_break parts
+    when "continue"
+      handle_continue parts
+    when "kill"
+      handle_kill parts
+    when "y"
+      handle_confirmation parts
+    when "quit"
+      handle_quit parts
+    when "run_with_error"
+      handle_run_with_error parts
+    else
+      puts "FAKE FDB doesn't know how to respond to #{command}"
+      exit 1
+    end
+
+    gather_input
+  end
+
+  def validate_argv
+    if ARGV.size > 0
+      raise "FAKE FDB doesn't expect any params, but received, #{ARGV}"
+    end
+  end
+
+  def handle_run args
+    str = "Waiting for Player to connect\n"
+    str << "Player connected; session starting.\n"
+    str << "Set breakpoints and then type 'continue' to resume the session.\n"
+    str = "[SWF] Users:lbayes:Projects:AsUnit-P2:asunit-4.0:bin:AsUnitRunner.swf - 226,833 bytes after decompression\n"
+    str << "(fdb) "
+    printf str
+  end
+
+  def handle_break args
+    str = "Breakpoint 1, AsUnitRunner() at AsUnitRunner.as:12\n"
+    str << "12                core = new TextCore();\n"
+    str << "(fdb) "
+    printf str
+  end
+
+  def handle_continue args
+    str = "Continuing now\n"
+    str << "<TestResults>\n"
+    str << "Fake Content\n"
+    str << "</TestResults>\n"
+    str << "(fdb) "
+    printf str
+  end
+
+  def handle_kill args
+    printf "Kill the program being debugged? (y or n) "
+  end
+
+  def handle_confirmation args
+    str = "Confirmation accepted\n"
+    str << "(fdb) "
+    printf str
+  end
+
+  def handle_run_with_error args
+    str = "This is an error!\n"
+    str << "This is more details about the error!\n"
+    str << "Here are even more details!\n"
+    $stderr.printf str
+    printf "(fdb) "
+  end
+
+  def handle_quit args
+    puts ">> EXITING NOW!\n"
+    exit! 0
+  end
+
+end
+
+fake_fdb = FakeFDB.new
+
+

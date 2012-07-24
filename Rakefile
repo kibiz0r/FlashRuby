@@ -1,24 +1,7 @@
-namespace :ruby do
-  task :autoconf do
-    cd "ruby" do
-      sh "autoconf"
-    end
-  end
+require 'bundler'
+require 'bundler/setup'
 
-  task :configure do
-    cd "ruby" do
-      sh "./configure --with-gcc=gcc-4.2 --with-arch=i386"
-    end
-  end
-
-  task :make do
-    cd "ruby" do
-      sh "make"
-    end
-  end
-end
-
-task :ruby => ["ruby:autoconf", "ruby:configure", "ruby:make"]
+require 'flashsdk'
 
 desc "extracts library.swf from FlashRubyCore.swc"
 task :library_swf do
@@ -35,8 +18,14 @@ task :framework do
 end
 
 desc "builds the ANE file"
-task :ane => [:library_swf] do
-  sh "AdobeAIRSDK/bin/adt -package -target ane FlashRuby.ane FlashRuby/src/extension.xml -swc FlashRuby/bin-debug/FlashRuby.swc -platform MacOS-x86 library.swf FlashRuby.framework"
+task ane: [:library_swf] do
+  sh "AdobeAIRSDK/bin/adt -package -target ane FlashRuby.ane FlashRuby/xml/extension.xml -swc FlashRuby/bin-debug/FlashRuby.swc -platform MacOS-x86 library.swf FlashRuby.framework"
 end
 
-task :default => [:framework, :ane]
+task default: [:framework, :ane]
+
+mxmlc 'FlashRubyHost/bin-debug/FlashRubyHost.swf' do |t|
+  t.input = 'src/FlashRubyHost.as'
+end
+
+flashplayer test: 'FlashRubyHost/bin-debug/FlashRubyHost.swf'

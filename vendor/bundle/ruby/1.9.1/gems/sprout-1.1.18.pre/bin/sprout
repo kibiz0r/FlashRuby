@@ -1,0 +1,9 @@
+#!/usr/bin/env ruby
+
+require 'rubygems'
+require 'sprout'
+
+generator = Sprout::CommandLine.new
+generator.parse! ARGV
+generator.execute
+

@@ -1,0 +1,9 @@
+source "http://rubygems.org"
+
+gem "sprout", ">= <%= Sprout::VERSION::STRING %>"
+
+group :development do
+  gem "shoulda"
+  gem "mocha"
+end
+

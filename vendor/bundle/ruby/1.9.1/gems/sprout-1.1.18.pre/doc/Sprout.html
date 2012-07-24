@@ -1,0 +1,778 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>
+  Module: Sprout
+  
+    &mdash; Sprouts v.1.0.34.pre
+  
+</title>
+
+  <link rel="stylesheet" href="css/style.css" type="text/css" media="screen" charset="utf-8" />
+
+  <link rel="stylesheet" href="css/common.css" type="text/css" media="screen" charset="utf-8" />
+
+<script type="text/javascript" charset="utf-8">
+  relpath = '';
+  if (relpath != '') relpath += '/';
+</script>
+
+  <script type="text/javascript" charset="utf-8" src="js/jquery.js"></script>
+
+  <script type="text/javascript" charset="utf-8" src="js/app.js"></script>
+
+
+  </head>
+  <body>
+    <script type="text/javascript" charset="utf-8">
+      if (window.top.frames.main) document.body.className = 'frames';
+    </script>
+    
+    <div id="header">
+      <div id="menu">
+  
+    <a href="_index.html">Index (S)</a> &raquo; 
+    
+    
+    <span class="title">Sprout</span>
+  
+  
+  <div class="noframes"><span class="title">(</span><a href="." target="_top">no frames</a><span class="title">)</span></div>
+</div>
+
+      <div id="search">
+  
+    <a id="class_list_link" href="#">Class List</a>
+  
+    <a id="method_list_link" href="#">Method List</a>
+  
+    <a id="file_list_link" href="#">File List</a>
+  
+</div>
+      <div class="clear"></div>
+    </div>
+    
+    <iframe id="search_frame"></iframe>
+    
+    <div id="content"><h1>Module: Sprout
+  
+  
+  
+</h1>
+
+<dl class="box">
+  
+  
+    
+  
+    
+  
+  
+  
+    <dt class="r1 last">Defined in:</dt>
+    <dd class="r1 last">lib/sprout.rb<span class="defines">,<br />
+  lib/sprout/errors.rb,<br /> lib/sprout/system.rb,<br /> lib/sprout/version.rb,<br /> lib/sprout/library.rb,<br /> lib/sprout/concern.rb,<br /> lib/sprout/platform.rb,<br /> lib/sprout/generator.rb,<br /> lib/sprout/executable.rb,<br /> lib/sprout/file_target.rb,<br /> lib/sprout/rdoc_parser.rb,<br /> lib/sprout/progress_bar.rb,<br /> lib/sprout/ruby_feature.rb,<br /> lib/sprout/command_line.rb,<br /> lib/sprout/specification.rb,<br /> lib/sprout/output_buffer.rb,<br /> lib/sprout/executable/url.rb,<br /> lib/sprout/generator/base.rb,<br /> lib/sprout/process_runner.rb,<br /> lib/sprout/executable/urls.rb,<br /> lib/sprout/executable/path.rb,<br /> lib/sprout/executable/base.rb,<br /> lib/sprout/executable/files.rb,<br /> lib/sprout/executable/param.rb,<br /> lib/sprout/executable/paths.rb,<br /> lib/sprout/executable/number.rb,<br /> lib/sprout/remote_file_loader.rb,<br /> lib/sprout/executable/boolean.rb,<br /> lib/sprout/executable/strings.rb,<br /> lib/sprout/remote_file_target.rb,<br /> lib/sprout/executable/file_param.rb,<br /> lib/sprout/executable/string_param.rb,<br /> lib/sprout/executable/collection_param.rb,<br /> lib/sprout/generators/tool/tool_generator.rb,<br /> lib/sprout/generators/ruby/ruby_generator.rb,<br /> lib/sprout/generators/library/library_generator.rb,<br /> lib/sprout/generators/generator/generator_generator.rb</span>
+</dd>
+  
+</dl>
+<div class="clear"></div>
+
+<h2>Defined Under Namespace</h2>
+<p class="children">
+   
+    
+      <strong class="modules">Modules:</strong> <span class='object_link'><a href="Sprout/Concern.html" title="Sprout::Concern (module)">Concern</a></span>, <span class='object_link'><a href="Sprout/Errors.html" title="Sprout::Errors (module)">Errors</a></span>, <span class='object_link'><a href="Sprout/Executable.html" title="Sprout::Executable (module)">Executable</a></span>, <span class='object_link'><a href="Sprout/Generator.html" title="Sprout::Generator (module)">Generator</a></span>, <span class='object_link'><a href="Sprout/RubyFeature.html" title="Sprout::RubyFeature (module)">RubyFeature</a></span>, <span class='object_link'><a href="Sprout/System.html" title="Sprout::System (module)">System</a></span>, <span class='object_link'><a href="Sprout/TestHelper.html" title="Sprout::TestHelper (module)">TestHelper</a></span>, <span class='object_link'><a href="Sprout/VERSION.html" title="Sprout::VERSION (module)">VERSION</a></span>
+    
+   
+    
+      <strong class="classes">Classes:</strong> <span class='object_link'><a href="Sprout/ArchiveUnpacker.html" title="Sprout::ArchiveUnpacker (class)">ArchiveUnpacker</a></span>, <span class='object_link'><a href="Sprout/CommandLine.html" title="Sprout::CommandLine (class)">CommandLine</a></span>, <span class='object_link'><a href="Sprout/FileTarget.html" title="Sprout::FileTarget (class)">FileTarget</a></span>, <span class='object_link'><a href="Sprout/GeneratorGenerator.html" title="Sprout::GeneratorGenerator (class)">GeneratorGenerator</a></span>, <span class='object_link'><a href="Sprout/Library.html" title="Sprout::Library (class)">Library</a></span>, <span class='object_link'><a href="Sprout/LibraryGenerator.html" title="Sprout::LibraryGenerator (class)">LibraryGenerator</a></span>, <span class='object_link'><a href="Sprout/OutputBuffer.html" title="Sprout::OutputBuffer (class)">OutputBuffer</a></span>, <span class='object_link'><a href="Sprout/Platform.html" title="Sprout::Platform (class)">Platform</a></span>, <span class='object_link'><a href="Sprout/ProcessRunner.html" title="Sprout::ProcessRunner (class)">ProcessRunner</a></span>, <span class='object_link'><a href="Sprout/ProgressBar.html" title="Sprout::ProgressBar (class)">ProgressBar</a></span>, <span class='object_link'><a href="Sprout/ProgressBarImpl.html" title="Sprout::ProgressBarImpl (class)">ProgressBarImpl</a></span>, <span class='object_link'><a href="Sprout/ProgressBarManager.html" title="Sprout::ProgressBarManager (class)">ProgressBarManager</a></span>, <span class='object_link'><a href="Sprout/ProgressBarOutputStream.html" title="Sprout::ProgressBarOutputStream (class)">ProgressBarOutputStream</a></span>, <span class='object_link'><a href="Sprout/RDocParser.html" title="Sprout::RDocParser (class)">RDocParser</a></span>, <span class='object_link'><a href="Sprout/RemoteFileLoader.html" title="Sprout::RemoteFileLoader (class)">RemoteFileLoader</a></span>, <span class='object_link'><a href="Sprout/RemoteFileTarget.html" title="Sprout::RemoteFileTarget (class)">RemoteFileTarget</a></span>, <span class='object_link'><a href="Sprout/ReversedProgressBar.html" title="Sprout::ReversedProgressBar (class)">ReversedProgressBar</a></span>, <span class='object_link'><a href="Sprout/RubyGenerator.html" title="Sprout::RubyGenerator (class)">RubyGenerator</a></span>, <span class='object_link'><a href="Sprout/Specification.html" title="Sprout::Specification (class)">Specification</a></span>, <span class='object_link'><a href="Sprout/ToolGenerator.html" title="Sprout::ToolGenerator (class)">ToolGenerator</a></span>
+    
+  
+</p>
+
+  <h2>Constant Summary</h2>
+  
+    <dl class="constants">
+      
+        <dt id="NAME-constant" class="">NAME =
+          
+        </dt>
+        <dd><pre class="code"><span class='tstring'><span class='tstring_beg'>'</span><span class='tstring_content'>sprout</span><span class='tstring_end'>'</span></span></pre></dd>
+      
+    </dl>
+  
+
+
+
+
+
+
+
+  
+    <h2>
+      Class Method Summary
+      <small>(<a href="#" class="summary_toggle">collapse</a>)</small>
+    </h2>
+
+    <ul class="summary">
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#cache-class_method" title="cache (class method)">+ (Dir) <strong>cache</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'><p>
+where Sprouts will look for downloaded archives.
+</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#current_system-class_method" title="current_system (class method)">+ (Sprout::System) <strong>current_system</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'><p>
+determine features like the cache path and how external processes are
+executed.
+</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#file_from_caller-class_method" title="file_from_caller (class method)">+ (File) <strong>file_from_caller</strong>(caller_string) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'><p>
+a Ruby exception.
+</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#generator_cache-class_method" title="generator_cache (class method)">+ (Dir) <strong>generator_cache</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'><p>
+templates.
+</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#home-class_method" title="home (class method)">+ (Dir) <strong>home</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'><p>
+will write files and generators and their templates.
+</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#stderr-class_method" title="stderr (class method)">+ (Object) <strong>stderr</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#stderr%3D-class_method" title="stderr= (class method)">+ (Object) <strong>stderr=</strong>(err) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#stdout-class_method" title="stdout (class method)">+ (Object) <strong>stdout</strong> </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#stdout%3D-class_method" title="stdout= (class method)">+ (Object) <strong>stdout=</strong>(out) </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+    </ul>
+  
+
+
+
+  <div id="class_method_details" class="method_details_list">
+    <h2>Class Method Details</h2>
+    
+    
+      <div class="method_details first">
+  <p class="signature first" id="cache-class_method">
+  
+    + (<tt><span class='object_link'><a href="Dir.html" title="Dir (class)">Dir</a></span></tt>) <strong>cache</strong> 
+  
+
+  
+</p><div class="docstring">
+  <div class="discussion">
+    <p>
+where Sprouts will look for downloaded archives.
+</p>
+<pre class="code ruby"><code>
+  <span class='id identifier rubyid_puts'>puts</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>&gt;&gt; Sprout Cache: </span><span class='embexpr_beg'>#{</span><span class='const'>Sprout</span><span class='period'>.</span><span class='id identifier rubyid_cache'>cache</span><span class='rbrace'>}</span><span class='tstring_end'>&quot;</span></span></code></pre>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<h3>Returns:</h3>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="Dir.html" title="Dir (class)">Dir</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'><p>
+The system-specific path to the writeable cache directory
+</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+63
+64
+65</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/sprout.rb', line 63</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_cache'>cache</span>
+  <span class='const'>File</span><span class='period'>.</span><span class='id identifier rubyid_join'>join</span><span class='lparen'>(</span><span class='id identifier rubyid_home'>home</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>'</span><span class='tstring_content'>cache</span><span class='tstring_end'>'</span></span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="current_system-class_method">
+  
+    + (<tt><span class='object_link'><a href="Sprout/System.html" title="Sprout::System (module)">Sprout::System</a></span></tt>) <strong>current_system</strong> 
+  
+
+  
+</p><div class="docstring">
+  <div class="discussion">
+    <p>
+determine features like the cache path and how external processes are
+executed.
+</p>
+<pre class="code ruby"><code>
+  <span class='id identifier rubyid_system'>system</span> <span class='op'>=</span> <span class='const'>Sprout</span><span class='period'>.</span><span class='id identifier rubyid_current_system'>current_system</span>
+  <span class='id identifier rubyid_puts'>puts</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>&gt;&gt; System: </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_system'>system</span><span class='period'>.</span><span class='id identifier rubyid_inspect'>inspect</span><span class='rbrace'>}</span><span class='tstring_end'>&quot;</span></span></code></pre>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<h3>Returns:</h3>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="Sprout/System.html" title="Sprout::System (module)">Sprout::System</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'><p>
+That is currently being used to
+</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+95
+96
+97</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/sprout.rb', line 95</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_current_system'>current_system</span>
+  <span class='const'>Sprout</span><span class='op'>::</span><span class='const'>System</span><span class='period'>.</span><span class='id identifier rubyid_create'>create</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="file_from_caller-class_method">
+  
+    + (<tt>File</tt>) <strong>file_from_caller</strong>(caller_string) 
+  
+
+  
+</p><div class="docstring">
+  <div class="discussion">
+    <p>
+a Ruby exception.
+</p>
+<p>
+Note: It&#8217;s a real bummer that this string is colon delimited - The
+value on Windows often includes a colon&#8230; Once again, Windows is
+dissed by fundamental Ruby decisions.
+</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<h3>Returns:</h3>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>File</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'><p>
+Path to the file from the &#8216;caller&#8217; property of
+</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+122
+123
+124
+125
+126
+127
+128
+129</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/sprout.rb', line 122</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_file_from_caller'>file_from_caller</span> <span class='id identifier rubyid_caller_string'>caller_string</span>
+  <span class='id identifier rubyid_parts'>parts</span> <span class='op'>=</span> <span class='id identifier rubyid_caller_string'>caller_string</span><span class='period'>.</span><span class='id identifier rubyid_split'>split</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>'</span><span class='tstring_content'>:</span><span class='tstring_end'>'</span></span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_str'>str</span>   <span class='op'>=</span> <span class='id identifier rubyid_parts'>parts</span><span class='period'>.</span><span class='id identifier rubyid_shift'>shift</span>
+  <span class='kw'>while</span><span class='lparen'>(</span><span class='id identifier rubyid_parts'>parts</span><span class='period'>.</span><span class='id identifier rubyid_size'>size</span> <span class='op'>&gt;</span> <span class='int'>0</span> <span class='op'>&amp;&amp;</span> <span class='op'>!</span><span class='const'>File</span><span class='period'>.</span><span class='id identifier rubyid_exists?'>exists?</span><span class='lparen'>(</span><span class='id identifier rubyid_str'>str</span><span class='rparen'>)</span><span class='rparen'>)</span>
+    <span class='id identifier rubyid_str'>str</span> <span class='op'>&lt;&lt;</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>:</span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_parts'>parts</span><span class='period'>.</span><span class='id identifier rubyid_shift'>shift</span><span class='rbrace'>}</span><span class='tstring_end'>&quot;</span></span>
+  <span class='kw'>end</span>
+  <span class='id identifier rubyid_str'>str</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="generator_cache-class_method">
+  
+    + (<tt><span class='object_link'><a href="Dir.html" title="Dir (class)">Dir</a></span></tt>) <strong>generator_cache</strong> 
+  
+
+  
+</p><div class="docstring">
+  <div class="discussion">
+    <p>
+templates.
+</p>
+<pre class="code ruby"><code>
+  <span class='id identifier rubyid_puts'>puts</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>&gt;&gt; Generator Cache: </span><span class='embexpr_beg'>#{</span><span class='const'>Sprout</span><span class='period'>.</span><span class='id identifier rubyid_generator_cache'>generator_cache</span><span class='rbrace'>}</span><span class='tstring_end'>&quot;</span></span></code></pre>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<h3>Returns:</h3>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="Dir.html" title="Dir (class)">Dir</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'><p>
+The location where Sprouts will look for generators and their
+</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+83
+84
+85</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/sprout.rb', line 83</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_generator_cache'>generator_cache</span>
+  <span class='const'>File</span><span class='period'>.</span><span class='id identifier rubyid_join'>join</span> <span class='id identifier rubyid_cache'>cache</span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>'</span><span class='tstring_content'>generators</span><span class='tstring_end'>'</span></span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="home-class_method">
+  
+    + (<tt><span class='object_link'><a href="Dir.html" title="Dir (class)">Dir</a></span></tt>) <strong>home</strong> 
+  
+
+  
+</p><div class="docstring">
+  <div class="discussion">
+    <p>
+will write files and generators and their templates.
+</p>
+<pre class="code ruby"><code>
+  <span class='id identifier rubyid_puts'>puts</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>&gt;&gt; Sprout home: </span><span class='embexpr_beg'>#{</span><span class='const'>Sprout</span><span class='period'>.</span><span class='id identifier rubyid_home'>home</span><span class='rbrace'>}</span><span class='tstring_end'>&quot;</span></span></code></pre>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<h3>Returns:</h3>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="Dir.html" title="Dir (class)">Dir</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'><p>
+The location where the currently-running version of Sprouts
+</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+73
+74
+75</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/sprout.rb', line 73</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_home'>home</span>
+  <span class='const'>File</span><span class='period'>.</span><span class='id identifier rubyid_join'>join</span><span class='lparen'>(</span><span class='id identifier rubyid_current_system'>current_system</span><span class='period'>.</span><span class='id identifier rubyid_application_home'>application_home</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>'</span><span class='tstring_content'>sprouts</span><span class='tstring_end'>'</span></span><span class='rparen'>)</span><span class='comma'>,</span> <span class='const'>Sprout</span><span class='op'>::</span><span class='const'>VERSION</span><span class='op'>::</span><span class='const'>MAJOR_MINOR</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="stderr-class_method">
+  
+    + (<tt>Object</tt>) <strong>stderr</strong> 
+  
+
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+111
+112
+113</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/sprout.rb', line 111</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_stderr'>stderr</span>
+  <span class='ivar'>@stderr</span> <span class='op'>||=</span> <span class='gvar'>$stderr</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="stderr=-class_method">
+  
+    + (<tt>Object</tt>) <strong>stderr=</strong>(err) 
+  
+
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+107
+108
+109</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/sprout.rb', line 107</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_stderr='>stderr=</span><span class='lparen'>(</span><span class='id identifier rubyid_err'>err</span><span class='rparen'>)</span>
+  <span class='ivar'>@stderr</span> <span class='op'>=</span> <span class='id identifier rubyid_err'>err</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="stdout-class_method">
+  
+    + (<tt>Object</tt>) <strong>stdout</strong> 
+  
+
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+103
+104
+105</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/sprout.rb', line 103</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_stdout'>stdout</span>
+  <span class='ivar'>@stdout</span> <span class='op'>||=</span> <span class='gvar'>$stdout</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <p class="signature " id="stdout=-class_method">
+  
+    + (<tt>Object</tt>) <strong>stdout=</strong>(out) 
+  
+
+  
+</p><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+99
+100
+101</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'lib/sprout.rb', line 99</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_stdout='>stdout=</span><span class='lparen'>(</span><span class='id identifier rubyid_out'>out</span><span class='rparen'>)</span>
+  <span class='ivar'>@stdout</span> <span class='op'>=</span> <span class='id identifier rubyid_out'>out</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+  </div>
+
+</div>
+    
+    <div id="footer">
+  Generated on Sun Mar 11 14:30:31 2012 by 
+  <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
+  0.7.5 (ruby-1.9.2).
+</div>
+
+  </body>
+</html>

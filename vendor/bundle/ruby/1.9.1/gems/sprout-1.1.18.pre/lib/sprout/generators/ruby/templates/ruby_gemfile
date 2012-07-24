@@ -1,0 +1,10 @@
+source :rubygems
+
+gem 'sprout', '>= <%= Sprout::VERSION::STRING %>'
+
+group :development do
+  gem 'rake'
+  gem 'shoulda'
+  gem 'mocha'
+end
+

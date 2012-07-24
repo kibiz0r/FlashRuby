@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<application xmlns="http://ns.adobe.com/air/application/2.0"> 
+  <id>sprouts.ADTTest</id>
+  <version>0.1</version> 
+  <filename>SomeProject</filename> 
+  <initialWindow> 
+    <content>test/fixtures/air/simple/SomeProject.swf</content> 
+    <visible>true</visible> 
+    <width>400</width> 
+    <height>200</height> 
+  </initialWindow> 
+</application>
+

@@ -17,6 +17,10 @@ void FlashRubyContextInitializer(void* extData, const uint8_t* ctxType, FREConte
   funcs[0].name = (const uint8_t*)"eval";
   funcs[0].functionData = NULL;
   funcs[0].function = &FlashRuby_eval;
+    
+  funcs[1].name = (const uint8_t*)"init_vm";
+  funcs[1].functionData = NULL;
+  funcs[1].function = &FlashRuby_init_vm;
   
   *functionsToSet = funcs;
 }
@@ -26,4 +30,9 @@ FREObject FlashRuby_eval(FREContext ctx, void* funcData, uint32_t argc, FREObjec
     FREObject arr;
     FRENewObject((const uint8_t*)"Array", 0, NULL, &arr, NULL);
     return arr;
+}
+
+FREObject FlashRuby_init_vm(FREContext ctx, void* funcData, uint32_t argc, FREObject argv[])
+{
+  return NULL;
 }
