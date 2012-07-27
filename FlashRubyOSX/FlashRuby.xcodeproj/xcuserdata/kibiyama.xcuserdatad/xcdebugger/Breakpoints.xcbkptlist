@@ -4,16 +4,30 @@
    version = "1.0">
    <FileBreakpoints>
       <FileBreakpoint
-         shouldBeEnabled = "No"
+         shouldBeEnabled = "Yes"
          ignoreCount = "0"
          continueAfterRunningActions = "No"
-         isPathRelative = "1"
-         filePath = "FlashRuby/FlashRuby.h"
-         timestampString = "341734894.105218"
+         filePath = "../rubinius/vm/environment.cpp"
+         timestampString = "364942730.979797"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "1"
-         endingLineNumber = "1">
+         startingLineNumber = "314"
+         endingLineNumber = "314"
+         landmarkName = "Environment::start_signals()"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "Yes"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "FlashRuby/FlashRuby.cpp"
+         timestampString = "364948618.099284"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "55"
+         endingLineNumber = "55"
+         landmarkName = "FlashRuby_init_vm(FREContext ctx, void* funcData, uint32_t argc, FREObject argv[])"
+         landmarkType = "7">
       </FileBreakpoint>
    </FileBreakpoints>
 </Bucket>

@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 
 if [[ ! -d vendor/bundle ]]; then
+  gem install rake
   bundle install --binstubs=vendor/bin --path vendor/bundle
 else
   bundle update
