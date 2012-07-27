@@ -2,3 +2,5 @@
 *.xcuserstate
 *.swf
 *.swc
+FlashRuby.framework/*
+FlashRubyNative/*

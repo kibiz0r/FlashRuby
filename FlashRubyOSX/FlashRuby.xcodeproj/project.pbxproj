@@ -145,7 +145,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0430;
-				ORGANIZATIONNAME = "Atomic Object";
+				ORGANIZATIONNAME = "Michael Harrington";
 			};
 			buildConfigurationList = 89A38846145E727B00E6C61A /* Build configuration list for PBXProject "FlashRuby" */;
 			compatibilityVersion = "Xcode 3.2";
