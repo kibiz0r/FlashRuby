@@ -24,10 +24,26 @@ namespace :rubinius do
     end
   end
 
+  namespace :build do
+    namespace :only do
+      task :shared do
+        cd 'rubinius' do
+          sh 'rake lib:only:shared'
+        end
+      end
+
+      task :static do
+        cd 'rubinius' do
+          sh 'rake lib:only:static'
+        end
+      end
+    end
+  end
+
   desc 'Build Rubinius'
   task :build do
     cd 'rubinius' do
-      sh 'rake lib:static'
+      sh 'rake lib:only:static'
     end
   end
 

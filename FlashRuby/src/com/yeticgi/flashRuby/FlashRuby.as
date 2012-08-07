@@ -8,6 +8,7 @@ package com.yeticgi.flashRuby
 	{
 		public function FlashRuby()
 		{
+			var five = 5;
 			var extensionContext:ExtensionContext = ExtensionContext.createExtensionContext("com.yeticgi.FlashRuby", null);
 			extensionContext.call("init_vm");
 			//NativeApplication.nativeApplication.addEventListener(InvokeEvent.INVOKE, onInvoke);

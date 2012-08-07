@@ -10,7 +10,7 @@
         </excludedEntries>
       </libraryPathEntry>
       <libraryPathEntry kind="3" linkType="1" path="/FlashRuby/bin-debug/FlashRuby.swc" useDefaultLinkType="false"/>
-      <libraryPathEntry kind="5" linkType="2" path="/Users/kibiyama/git/FlashRuby/FlashRuby.ane"/>
+      <libraryPathEntry kind="5" linkType="2" path="/Users/kibiyama/git/flashruby2/FlashRuby.ane"/>
     </libraryPath>
     <sourceAttachmentPath/>
   </compiler>
@@ -27,7 +27,7 @@
       <airSettings airCertificatePath="" airTimestamp="true" anePathSet="true" version="1">
         <airExcludes/>
         <anePaths>
-          <anePathEntry path="/Users/kibiyama/git/FlashRuby/FlashRuby.ane"/>
+          <anePathEntry path="/Users/kibiyama/git/flashruby2/FlashRuby.ane"/>
         </anePaths>
       </airSettings>
       <actionScriptSettings version="1"/>

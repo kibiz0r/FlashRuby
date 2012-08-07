@@ -21,12 +21,25 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "FlashRuby/FlashRuby.cpp"
-         timestampString = "364948618.099284"
+         timestampString = "365971323.675944"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "55"
-         endingLineNumber = "55"
-         landmarkName = "FlashRuby_init_vm(FREContext ctx, void* funcData, uint32_t argc, FREObject argv[])"
+         startingLineNumber = "27"
+         endingLineNumber = "27"
+         landmarkName = "FlashRubyContextEntryPoint(void** extDataToSet, FREContextInitializer* ctxInitializerToSet, FREContextFinalizer* ctxFinalizerToSet)"
+         landmarkType = "7">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "Yes"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "FlashRuby/FlashRuby.cpp"
+         timestampString = "366002819.891263"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "134"
+         endingLineNumber = "134"
+         landmarkName = "FlashRuby_init_vm(FREContext ctx, void* funcData, uint32_t _argc, FREObject _argv[])"
          landmarkType = "7">
       </FileBreakpoint>
    </FileBreakpoints>

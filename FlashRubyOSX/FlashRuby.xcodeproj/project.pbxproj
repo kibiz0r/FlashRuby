@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		892D0A3815D0BD9C00999EFF /* librubinius.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 89DA482815CEF69D00849819 /* librubinius.dylib */; };
 		89414C2D15BFDCEA009FADE4 /* FlashRuby.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 89414C2C15BFDCEA009FADE4 /* FlashRuby.cpp */; };
-		89414C3A15C00AB3009FADE4 /* librubinius.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8967FE3215BF5B6700D70F17 /* librubinius.a */; };
 		89A38853145E72F700E6C61A /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89A38852145E72F700E6C61A /* Cocoa.framework */; };
 		89A3885D145E72F700E6C61A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 89A3885B145E72F700E6C61A /* InfoPlist.strings */; };
 		89C93D7315BA87A70048668A /* Adobe AIR.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89C93D7115BA87920048668A /* Adobe AIR.framework */; };
@@ -17,8 +17,6 @@
 /* Begin PBXFileReference section */
 		89414C2C15BFDCEA009FADE4 /* FlashRuby.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FlashRuby.cpp; sourceTree = "<group>"; };
 		89414C2F15BFDF66009FADE4 /* libLLVMCore.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libLLVMCore.a; path = ../rubinius/vendor/llvm/Release/lib/libLLVMCore.a; sourceTree = "<group>"; };
-		89414C3115BFED9F009FADE4 /* librubinius.so */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; name = librubinius.so; path = ../rubinius/vm/librubinius.so; sourceTree = "<group>"; };
-		8967FE3215BF5B6700D70F17 /* librubinius.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = librubinius.a; path = ../rubinius/vm/librubinius.a; sourceTree = "<group>"; };
 		89A3884F145E72F700E6C61A /* FlashRuby.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FlashRuby.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		89A38852145E72F700E6C61A /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		89A38855145E72F700E6C61A /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -30,6 +28,7 @@
 		89A3885F145E72F700E6C61A /* FlashRuby.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FlashRuby.h; sourceTree = "<group>"; };
 		89A38868145E758D00E6C61A /* Adobe AIR.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "Adobe AIR.framework"; path = "../../../../../../Library/Frameworks/Adobe AIR.framework"; sourceTree = "<group>"; };
 		89C93D7115BA87920048668A /* Adobe AIR.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "Adobe AIR.framework"; path = "../AdobeAIRSDK/runtimes/air/mac/Adobe AIR.framework"; sourceTree = "<group>"; };
+		89DA482815CEF69D00849819 /* librubinius.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = librubinius.dylib; path = ../rubinius/vm/librubinius.dylib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,7 +36,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				89414C3A15C00AB3009FADE4 /* librubinius.a in Frameworks */,
+				892D0A3815D0BD9C00999EFF /* librubinius.dylib in Frameworks */,
 				89C93D7315BA87A70048668A /* Adobe AIR.framework in Frameworks */,
 				89A38853145E72F700E6C61A /* Cocoa.framework in Frameworks */,
 			);
@@ -49,9 +48,8 @@
 		89A38841145E727B00E6C61A = {
 			isa = PBXGroup;
 			children = (
-				89414C3115BFED9F009FADE4 /* librubinius.so */,
+				89DA482815CEF69D00849819 /* librubinius.dylib */,
 				89414C2F15BFDF66009FADE4 /* libLLVMCore.a */,
-				8967FE3215BF5B6700D70F17 /* librubinius.a */,
 				89C93D7115BA87920048668A /* Adobe AIR.framework */,
 				89A38858145E72F700E6C61A /* FlashRuby */,
 				89A38851145E72F700E6C61A /* Frameworks */,
@@ -202,9 +200,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = NO;
 				HEADER_SEARCH_PATHS = ../AdobeAIRSDK/include;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
+				STRIP_INSTALLED_PRODUCT = NO;
+				STRIP_STYLE = debugging;
 				VALID_ARCHS = i386;
 			};
 			name = Debug;
@@ -213,9 +214,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = NO;
 				HEADER_SEARCH_PATHS = ../AdobeAIRSDK/include;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
+				STRIP_INSTALLED_PRODUCT = NO;
+				STRIP_STYLE = debugging;
 				VALID_ARCHS = i386;
 			};
 			name = Release;
@@ -226,7 +230,7 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEBUG_INFORMATION_FORMAT = dwarf;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -257,17 +261,21 @@
 					../rubinius/vendor/libtommath,
 					../rubinius/vm/capi/19/include,
 				);
+				INFOPLIST_EXPAND_BUILD_SETTINGS = YES;
 				INFOPLIST_FILE = "FlashRuby/FlashRuby-Info.plist";
 				INSTALL_PATH = "$(HOME)/Library/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/../runtimes/air/mac @executable_path/../Frameworks /Library/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/../rubinius/vm\"",
 				);
+				MACH_O_TYPE = mh_dylib;
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				ONLY_ACTIVE_ARCH = YES;
 				ORDER_FILE = "";
-				OTHER_LDFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
 				SDKROOT = macosx;
 				SKIP_INSTALL = NO;
 				WRAPPER_EXTENSION = framework;
@@ -279,8 +287,8 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				COPY_PHASE_STRIP = YES;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -304,17 +312,21 @@
 					../rubinius/vendor/libtommath,
 					../rubinius/vm/capi/19/include,
 				);
+				INFOPLIST_EXPAND_BUILD_SETTINGS = YES;
 				INFOPLIST_FILE = "FlashRuby/FlashRuby-Info.plist";
 				INSTALL_PATH = "$(HOME)/Library/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/../runtimes/air/mac @executable_path/../Frameworks /Library/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/../rubinius/vm\"",
 				);
+				MACH_O_TYPE = mh_dylib;
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				ONLY_ACTIVE_ARCH = YES;
 				ORDER_FILE = "";
-				OTHER_LDFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
 				SDKROOT = macosx;
 				SKIP_INSTALL = NO;
 				WRAPPER_EXTENSION = framework;
