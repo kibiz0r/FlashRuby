@@ -4,3 +4,8 @@
 *.swc
 FlashRuby.framework/*
 FlashRubyNative/*
+air3
+air3.*
+flex4
+flex4.*
+lib

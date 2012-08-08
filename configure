@@ -1,0 +1,24 @@
+#!/usr/bin/env ruby
+
+def sh(cmd)
+  puts cmd
+  system cmd
+end
+
+def message(str)
+  puts '=' * str.size
+  puts str
+  puts '=' * str.size
+end
+
+if Dir.exists? 'vendor/bundle'
+  sh 'bundle update'
+else
+  sh 'gem install rake'
+  sh 'bundle install --binstubs=vendor/bin --path=vendor/bundle'
+end
+
+unless Dir.exists? 'rubinius'
+  message "Whoops, looks like git didn't check out rubinius, let me take care of that for you..."
+  sh 'git submodule update --init'
+end

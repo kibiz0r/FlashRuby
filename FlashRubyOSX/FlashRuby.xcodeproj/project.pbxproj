@@ -24,7 +24,6 @@
 		89A38857145E72F700E6C61A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		89A3885A145E72F700E6C61A /* FlashRuby-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FlashRuby-Info.plist"; sourceTree = "<group>"; };
 		89A3885C145E72F700E6C61A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		89A3885E145E72F700E6C61A /* FlashRuby-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FlashRuby-Prefix.pch"; sourceTree = "<group>"; };
 		89A3885F145E72F700E6C61A /* FlashRuby.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FlashRuby.h; sourceTree = "<group>"; };
 		89A38868145E758D00E6C61A /* Adobe AIR.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "Adobe AIR.framework"; path = "../../../../../../Library/Frameworks/Adobe AIR.framework"; sourceTree = "<group>"; };
 		89C93D7115BA87920048668A /* Adobe AIR.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "Adobe AIR.framework"; path = "../AdobeAIRSDK/runtimes/air/mac/Adobe AIR.framework"; sourceTree = "<group>"; };
@@ -100,7 +99,6 @@
 			children = (
 				89A3885A145E72F700E6C61A /* FlashRuby-Info.plist */,
 				89A3885B145E72F700E6C61A /* InfoPlist.strings */,
-				89A3885E145E72F700E6C61A /* FlashRuby-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -196,7 +194,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		89A38848145E727B00E6C61A /* Debug */ = {
+		89A38848145E727B00E6C61A /* debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
@@ -208,9 +206,9 @@
 				STRIP_STYLE = debugging;
 				VALID_ARCHS = i386;
 			};
-			name = Debug;
+			name = debug;
 		};
-		89A38849145E727B00E6C61A /* Release */ = {
+		89A38849145E727B00E6C61A /* release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
@@ -222,13 +220,15 @@
 				STRIP_STYLE = debugging;
 				VALID_ARCHS = i386;
 			};
-			name = Release;
+			name = release;
 		};
-		89A38863145E72F700E6C61A /* Debug */ = {
+		89A38863145E72F700E6C61A /* debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)";
+				CONFIGURATION_TEMP_DIR = "$(OBJROOT)/$(CONFIGURATION)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -242,8 +242,8 @@
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "FlashRuby/FlashRuby-Prefix.pch";
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -264,6 +264,7 @@
 				INFOPLIST_EXPAND_BUILD_SETTINGS = YES;
 				INFOPLIST_FILE = "FlashRuby/FlashRuby-Info.plist";
 				INSTALL_PATH = "$(HOME)/Library/Frameworks";
+				LD_MAP_FILE_PATH = "";
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/../runtimes/air/mac @executable_path/../Frameworks /Library/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -271,22 +272,27 @@
 				);
 				MACH_O_TYPE = mh_dylib;
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				OBJROOT = obj;
 				ONLY_ACTIVE_ARCH = YES;
 				ORDER_FILE = "";
 				PRIVATE_HEADERS_FOLDER_PATH = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PUBLIC_HEADERS_FOLDER_PATH = "";
 				SDKROOT = macosx;
+				SHARED_PRECOMPS_DIR = "";
 				SKIP_INSTALL = NO;
+				SYMROOT = ../lib;
 				WRAPPER_EXTENSION = framework;
 			};
-			name = Debug;
+			name = debug;
 		};
-		89A38864145E72F700E6C61A /* Release */ = {
+		89A38864145E72F700E6C61A /* release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)";
+				CONFIGURATION_TEMP_DIR = "$(OBJROOT)/$(CONFIGURATION)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -298,8 +304,8 @@
 				FRAMEWORK_VERSION = A;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "FlashRuby/FlashRuby-Prefix.pch";
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "";
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
@@ -315,6 +321,7 @@
 				INFOPLIST_EXPAND_BUILD_SETTINGS = YES;
 				INFOPLIST_FILE = "FlashRuby/FlashRuby-Info.plist";
 				INSTALL_PATH = "$(HOME)/Library/Frameworks";
+				LD_MAP_FILE_PATH = "";
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/../runtimes/air/mac @executable_path/../Frameworks /Library/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -322,16 +329,19 @@
 				);
 				MACH_O_TYPE = mh_dylib;
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				OBJROOT = obj;
 				ONLY_ACTIVE_ARCH = YES;
 				ORDER_FILE = "";
 				PRIVATE_HEADERS_FOLDER_PATH = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PUBLIC_HEADERS_FOLDER_PATH = "";
 				SDKROOT = macosx;
+				SHARED_PRECOMPS_DIR = "";
 				SKIP_INSTALL = NO;
+				SYMROOT = ../lib;
 				WRAPPER_EXTENSION = framework;
 			};
-			name = Release;
+			name = release;
 		};
 /* End XCBuildConfiguration section */
 
@@ -339,20 +349,20 @@
 		89A38846145E727B00E6C61A /* Build configuration list for PBXProject "FlashRuby" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				89A38848145E727B00E6C61A /* Debug */,
-				89A38849145E727B00E6C61A /* Release */,
+				89A38848145E727B00E6C61A /* debug */,
+				89A38849145E727B00E6C61A /* release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = release;
 		};
 		89A38862145E72F700E6C61A /* Build configuration list for PBXNativeTarget "FlashRuby" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				89A38863145E72F700E6C61A /* Debug */,
-				89A38864145E72F700E6C61A /* Release */,
+				89A38863145E72F700E6C61A /* debug */,
+				89A38864145E72F700E6C61A /* release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = release;
 		};
 /* End XCConfigurationList section */
 	};
