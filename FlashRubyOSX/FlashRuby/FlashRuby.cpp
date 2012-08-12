@@ -87,10 +87,9 @@ FREObject FlashRuby_eval(FREContext ctx, void* funcData, uint32_t argc, FREObjec
   
   
   
-  Object* kernel = G(object)->get_const(state, "Kernel");
-//  String* str = String::create(state, (const char*)fl_str);
+  String* str = String::create(state, (const char*)fl_str);
   Array* eval_args = Array::create(state, 1);
-  eval_args->append(state, String::create(state, "5 + 10"));
+  eval_args->append(state, str);
   
   
   Object* result_obj = G(main)->send(state, frame, state->symbol("instance_eval"), eval_args);

@@ -14,12 +14,12 @@ package com.yeticgi.flashRuby
 			extensionContext.call("init_vm");
 		}
 		
-		public function eval(str:String):RubyObject
+		public function eval(str:String):String
 		{
-			return extensionContext.call("eval", str) as RubyObject;
+			return extensionContext.call("eval", str) as String;
 		}
 		
-		public function get stdin():RubyObject
+		/*public function get stdin():RubyObject
 		{
 			return eval("$<"); 
 		}
@@ -27,6 +27,6 @@ package com.yeticgi.flashRuby
 		public function get stdout():RubyObject
 		{
 			return eval("$>");
-		}
+		}*/
 	}
 }

@@ -31,6 +31,7 @@ flashruby = 'FlashRuby'
 flashruby_source = FileList["#{flashruby}/src/**/*.as"].to_a
 flashruby_xml = "#{flashruby}/xml/extension.xml"
 flashruby_swc = "#{flashruby}/bin/#{configuration}/FlashRuby.swc"
+flashruby_config = 'FlashRuby/src/FlashRuby-app.config'
 
 framework_name = 'FlashRuby.framework'
 framework = "lib/#{configuration}/#{framework_name}"
@@ -96,11 +97,11 @@ file framework_binary => librubinius do
   end
 end
 
-file flashruby_swc => compc do
+file flashruby_swc => [*flashruby_source, compc] do
   sh "#{compc} +configname=air -load-config+=#{flashruby_config} -debug=#{configuration == 'debug'} -output #{flashruby_swc}"
 end
 
-file ane => [*flashruby_source, adt, framework_binary] do
+file ane => [adt, flashruby_swc, framework_binary] do
   Dir.mktmpdir do |tmpdir|
     sh "unzip -uo #{flashruby_swc} library.swf -d #{tmpdir}"
     cp_r framework, "#{tmpdir}/."
@@ -134,6 +135,10 @@ task :wipe do
 end
 
 task :default => :console
+
+task :fixfb do
+  sh "fixfb"
+end
 
 namespace :rubinius do
   desc 'Set up Rubinius to be built'

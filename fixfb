@@ -1,0 +1,4 @@
+#!/usr/bin/env sh
+
+rm -rf '/Users/kibiyama/Documents/Adobe Flash Builder 4.6/.metadata/.plugins/com.adobe.flexbuilder.project.ui/ANEFiles/firb/macosx/FlashRuby.ane/META-INF/ANE/MacOS-x86/FlashRuby.framework'
+cp -R 'lib/debug/FlashRuby.framework' '/Users/kibiyama/Documents/Adobe Flash Builder 4.6/.metadata/.plugins/com.adobe.flexbuilder.project.ui/ANEFiles/firb/macosx/FlashRuby.ane/META-INF/ANE/MacOS-x86/FlashRuby.framework'
