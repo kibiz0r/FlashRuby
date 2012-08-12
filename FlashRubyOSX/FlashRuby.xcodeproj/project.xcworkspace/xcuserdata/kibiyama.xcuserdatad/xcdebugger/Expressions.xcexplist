@@ -3,18 +3,40 @@
    version = "1.0">
    <ContextStates>
       <ContextState
-         contextName = "GLOBAL">
+         contextName = "rubinius::VMMethod::interpreter(rubinius::State*, rubinius::VMMethod*, rubinius::InterpreterCallFrame*):instructions.cpp">
          <PersistentStrings>
             <PersistentString
-               value = "dlopen">
+               value = "call_frame-&gt;cm-&gt;full_name(state)-&gt;c_str(state)">
             </PersistentString>
             <PersistentString
-               value = "dlsym">
+               value = "call_frame-&gt;arguments-&gt;name_-&gt;to_s(state, 0)-&gt;c_str(state)">
+            </PersistentString>
+            <PersistentString
+               value = "call_frame-&gt;cm-&gt;metadata_-&gt;to_s(state, 0)-&gt;c_str(state)">
             </PersistentString>
          </PersistentStrings>
       </ContextState>
       <ContextState
          contextName = "FlashRuby_init_vm:FlashRuby.cpp">
+      </ContextState>
+      <ContextState
+         contextName = "FlashRuby_eval:FlashRuby.cpp">
+         <PersistentStrings>
+            <PersistentString
+               value = "(const char*)fl_str">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "rubinius::CompiledMethod::default_executor(rubinius::State*, rubinius::CallFrame*, rubinius::Executable*, rubinius::Module*, rubinius::Arguments&amp;):compiledmethod.cpp">
+         <PersistentStrings>
+            <PersistentString
+               value = "cm">
+            </PersistentString>
+            <PersistentString
+               value = "cm-&gt;execute">
+            </PersistentString>
+         </PersistentStrings>
       </ContextState>
    </ContextStates>
 </VariablesViewState>

@@ -4,7 +4,9 @@
 #include <dlfcn.h>
 #include "ruby.h"
 #include "environment.hpp"
-#include "vm/on_stack.hpp"
+#include "vm.hpp"
+#include "on_stack.hpp"
+#include "call_frame.hpp"
 #include "builtin/object.hpp"
 #include "builtin/class.hpp"
 #include "builtin/string.hpp"
@@ -12,9 +14,15 @@
 #include "builtin/array.hpp"
 #include "builtin/system.hpp"
 #include "builtin/exception.hpp"
+#include "builtin/thread.hpp"
+#include "builtin/nativemethod.hpp"
 #include "builtin/constantscope.hpp"
+#include "builtin/compiledmethod.hpp"
 
-rubinius::Environment* environment = NULL;
+using namespace rubinius;
+
+Environment* environment = NULL;
+State* state = NULL;
 
 extern "C" {
   int ffi_stat(const char *path, struct stat *buf);
@@ -47,21 +55,59 @@ void FlashRubyContextInitializer(void* extData, const uint8_t* ctxType, FREConte
 
 FREObject FlashRuby_eval(FREContext ctx, void* funcData, uint32_t argc, FREObject argv[])
 {
-  FREObject arr;
-  FRENewObject((const uint8_t*)"Array", 0, NULL, &arr, NULL);
-  return arr;
-}
+  uint32_t length = 0;
+  const uint8_t* fl_str = NULL;
+  FREGetObjectAsUTF8(argv[0], &length, &fl_str);
+  
+  
+  
+  
+  
+  InterpreterCallFrame* frame = ALLOCA_CALLFRAME(0);
+  frame->prepare(0);
+  frame->previous = NULL;
+  frame->dispatch_data = NULL;
+  frame->flags = 0;
+  
+  CompiledMethod* cm = CompiledMethod::create(state);
+  cm->metadata(state, state->symbol("__script__"));
+  cm->name(state, state->symbol("__script__"));
+  frame->cm = cm;
+  
+  StackVariables* scope = ALLOCA_STACKVARIABLES(0);
+  scope->initialize(G(main), cNil, G(object), 0);
+  scope->on_heap_ = VariableScope::synthesize(state, cm, G(object), cNil, G(main), cNil, state->new_object<Tuple>(G(tuple)));
+  frame->scope = scope;
+  
+  Arguments* arguments = new Arguments(state->symbol("script"), G(main), cNil, 0, 0);
+  frame->arguments = arguments;
+  
+  state->set_call_frame(frame);
+  
+  
+  
+  
+  Object* kernel = G(object)->get_const(state, "Kernel");
+//  String* str = String::create(state, (const char*)fl_str);
+  Array* eval_args = Array::create(state, 1);
+  eval_args->append(state, String::create(state, "5 + 10"));
+  
+  
+  Object* result_obj = G(main)->send(state, frame, state->symbol("instance_eval"), eval_args);
+  const char* result_c_str = result_obj->to_s(state)->c_str_null_safe(state);
 
-/*extern "C" {
-  int ffi_stat(const char *path, struct stat *buf);
-}*/
+  
+  FREObject result_str;
+  FRENewObjectFromUTF8(strlen(result_c_str), (const uint8_t*)result_c_str, &result_str);
+  return result_str;
+}
 
 FREObject FlashRuby_init_vm(FREContext ctx, void* funcData, uint32_t _argc, FREObject _argv[])
 {
   int argc = 1;
-  char* argv[] = { "/Users/kibiyama/git/flashruby2/rubinius/bin/rbx" };
+  char* argv[] = { "/Users/kibiyama/git/flashruby/rubinius/bin/rbx" };
   environment = new rubinius::Environment(1, (char**)argv);
-  rubinius::State* state = environment->state;
+  state = environment->state;
   
   
   int i = 0;
@@ -85,10 +131,17 @@ FREObject FlashRuby_init_vm(FREContext ctx, void* funcData, uint32_t _argc, FREO
   
   environment->load_kernel(runtime);
   
-  // start_signals();
   environment->run_file(runtime + "/loader.rbc");
   
+  rubinius::Exception* exception1 = state->thread_state()->current_exception();
+  const char* message1 = exception1->nil_p() ? NULL : exception1->message_c_str(state);
+  const char* trace1 = exception1->nil_p() ? NULL : exception1->send(state, NULL, state->symbol("backtrace"))->send(state, NULL, state->symbol("inspect"))->to_s(state)->c_str(state);
+  
   state->vm()->thread_state()->clear();
+  
+  rubinius::Exception* exception2 = state->thread_state()->current_exception();
+  const char* message2 = exception2->nil_p() ? NULL : exception2->message_c_str(state);
+  const char* trace2 = exception2->nil_p() ? NULL : exception2->send(state, NULL, state->symbol("backtrace"))->send(state, NULL, state->symbol("inspect"))->to_s(state)->c_str(state);
   
   rubinius::Object* loader = G(rubinius)->get_const(state, state->symbol("Loader"));
   if(loader->nil_p()) {
@@ -96,70 +149,32 @@ FREObject FlashRuby_init_vm(FREContext ctx, void* funcData, uint32_t _argc, FREO
     exit(127);
   }
   
+  rubinius::Exception* exception3 = state->thread_state()->current_exception();
+  const char* message3 = exception3->nil_p() ? NULL : exception3->message_c_str(state);
+  const char* trace3 = exception3->nil_p() ? NULL : exception3->send(state, NULL, state->symbol("backtrace"))->send(state, NULL, state->symbol("inspect"))->to_s(state)->c_str(state);
+  
   rubinius::OnStack<1> os(state, loader);
   
   rubinius::Object* inst = loader->send(state, 0, state->symbol("new"));
   
   rubinius::OnStack<1> os2(state, inst);
   
+  rubinius::Exception* exception4 = state->thread_state()->current_exception();
+  const char* message4 = exception4->nil_p() ? NULL : exception4->message_c_str(state);
+  const char* trace4 = exception4->nil_p() ? NULL : exception4->send(state, NULL, state->symbol("backtrace"))->send(state, NULL, state->symbol("inspect"))->to_s(state)->c_str(state);
+  
   inst->send(state, 0, state->symbol("preamble"));
   inst->send(state, 0, state->symbol("system_load_path"));
   inst->send(state, 0, state->symbol("signals"));
   inst->send(state, 0, state->symbol("load_compiler"));
-  //inst->send(state, 0, state->symbol("preload"));
-  //inst->send(state, 0, state->symbol("detect_alias"));
-  //inst->send(state, 0, state->symbol("options"));
-  //inst->send(state, 0, state->symbol("load_paths"));
-  //inst->send(state, 0, state->symbol("debugger"));
-  //inst->send(state, 0, state->symbol("rubygems"));
-  //inst->send(state, 0, state->symbol("gemfile"));
-  //inst->send(state, 0, state->symbol("requires"));
-  //inst->send(state, 0, state->symbol("evals"));
-  //inst->send(state, 0, state->symbol("script"));
   
+  rubinius::Exception* exception5 = state->thread_state()->current_exception();
+  const char* message5 = exception5->nil_p() ? NULL : exception5->message_c_str(state);
+  const char* trace5 = exception5->nil_p() ? NULL : exception5->send(state, NULL, state->symbol("backtrace"))->send(state, NULL, state->symbol("inspect"))->to_s(state)->c_str(state);
+  
+  rubinius::Exception* exception6 = state->thread_state()->current_exception();
+  const char* message6 = exception6->nil_p() ? NULL : exception6->message_c_str(state);
+  const char* trace6 = exception6->nil_p() ? NULL : exception6->send(state, NULL, state->symbol("backtrace"))->send(state, NULL, state->symbol("inspect"))->to_s(state)->c_str(state);
 
-  int (*baz)(const char *, struct stat *) = ffi_stat;
-  char* (*baz2)(const char*, const char*) = crypt;
-//  void* foo = dlopen(RTLD_SELF, RTLD_NOW | RTLD_GLOBAL);
-  //void* bar = dlsym(foo, "ffi_stat");
-//  void* bar = dlsym(foo, "FREGetContextNativeData");
-  void* bar = dlsym(RTLD_SELF, "ffi_stat");
-//  void* bar2 = dlsym(foo, "_ffi_stat");
-  const char* err = dlerror();
-  
-  
-  //rubinius::Exception* exception1 = state->thread_state()->current_exception();
-//  const char* message1 = exception1->send(state, NULL, state->symbol("backtrace"))->send(state, NULL, state->symbol("inspect"))->to_s(state)->c_str(state);
-  
-  rubinius::Object* code_loader = G(rubinius)->get_const(state, "CodeLoader");
-  rubinius::Object* code_loader_inst = loader->send(state, NULL, state->symbol("new"));
-  bool success = code_loader_inst->send(state, NULL, state->symbol("require"))->true_p();
-  rubinius::Exception* exception3 = state->thread_state()->current_exception();
-  const char* message3 = exception3->send(state, NULL, state->symbol("backtrace"))->send(state, NULL, state->symbol("inspect"))->to_s(state)->c_str(state);
-  
-  rubinius::Object* kernel = G(object)->get_const(state, "Kernel");
-  rubinius::Array* require_args = rubinius::Array::create(state, 1);
-  require_args->append(state, rubinius::String::create(state, "/Users/kibiyama/git/flashruby2/foobar.rb"));
-  bool require = kernel->respond_to_public(state, state->symbol("require"));
-  rubinius::Object* result = kernel->send(state, NULL, state->symbol("require"), require_args);
-  bool is_true = result->true_p();
-  
-  
-  //environment->load_kernel("/Users/kibiyama/git/flashruby2/rubinius/runtime/19");
-  //environment->run_file("/Users/kibiyama/git/flashruby2/rubinius/runtime/19/loader.rbc");
-  //environment->run_from_filesystem();
-  
-  /*rubinius::Object* main = G(main);
-  
-  rubinius::Array* class_variable_get_args = rubinius::Array::create(state, 1);
-  class_variable_get_args->append(state, state->symbol("Kernel"));
-  rubinius::Object* kernel = G(constantscope)->send(state, NULL, state->symbol("class_variable_get"), class_variable_get_args);
-  bool eval_available = kernel->respond_to(state, state->symbol("eval"), NULL)->true_p();
-  
-  rubinius::Array* argArray = rubinius::Array::create(state, 1);
-  argArray->append(state, rubinius::String::create(state, "/Users/kibiyama/git/flashruby/FlashRubyHost/bin-debug/foobar.rb"));
-  bool responds = main->respond_to(state, state->symbol("require"), NULL)->true_p();
-  rubinius::Object* resultObject = main->send(state, NULL, state->symbol("require"), argArray);
-  const char* result = resultObject->to_s(state)->c_str(state);*/
   return NULL;
 }

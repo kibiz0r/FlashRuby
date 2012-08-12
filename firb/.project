@@ -3,6 +3,7 @@
 	<name>firb</name>
 	<comment></comment>
 	<projects>
+		<project>FlashRuby</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>

@@ -1,17 +1,19 @@
 package
 {
 	import com.yeticgi.flashRuby.FlashRuby;
+	import com.yeticgi.flashRuby.RubyObject;
 	
 	import flash.desktop.NativeProcess;
 	import flash.display.Sprite;
-	
+
 	public class firb extends Sprite
 	{
-		var flashRuby:FlashRuby;
+		private var flashRuby:FlashRuby;
 		
 		public function firb()
 		{
 			flashRuby = new FlashRuby();
+			var fiftyFive = processInput("5 + 50");
 		}
 		
 		public function processInput(input:String):void

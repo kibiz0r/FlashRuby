@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		892D0A3815D0BD9C00999EFF /* librubinius.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 89DA482815CEF69D00849819 /* librubinius.dylib */; };
+		891FF5E515D43740009CCF0C /* librubinius.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 891FF5E415D43740009CCF0C /* librubinius.dylib */; };
 		89414C2D15BFDCEA009FADE4 /* FlashRuby.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 89414C2C15BFDCEA009FADE4 /* FlashRuby.cpp */; };
 		89A38853145E72F700E6C61A /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89A38852145E72F700E6C61A /* Cocoa.framework */; };
 		89A3885D145E72F700E6C61A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 89A3885B145E72F700E6C61A /* InfoPlist.strings */; };
@@ -15,6 +15,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		891FF5E415D43740009CCF0C /* librubinius.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = librubinius.dylib; path = ../rubinius/bin/librubinius.dylib; sourceTree = "<group>"; };
 		89414C2C15BFDCEA009FADE4 /* FlashRuby.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FlashRuby.cpp; sourceTree = "<group>"; };
 		89414C2F15BFDF66009FADE4 /* libLLVMCore.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libLLVMCore.a; path = ../rubinius/vendor/llvm/Release/lib/libLLVMCore.a; sourceTree = "<group>"; };
 		89A3884F145E72F700E6C61A /* FlashRuby.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FlashRuby.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -27,7 +28,6 @@
 		89A3885F145E72F700E6C61A /* FlashRuby.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FlashRuby.h; sourceTree = "<group>"; };
 		89A38868145E758D00E6C61A /* Adobe AIR.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "Adobe AIR.framework"; path = "../../../../../../Library/Frameworks/Adobe AIR.framework"; sourceTree = "<group>"; };
 		89C93D7115BA87920048668A /* Adobe AIR.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "Adobe AIR.framework"; path = "../AdobeAIRSDK/runtimes/air/mac/Adobe AIR.framework"; sourceTree = "<group>"; };
-		89DA482815CEF69D00849819 /* librubinius.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = librubinius.dylib; path = ../rubinius/vm/librubinius.dylib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,7 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				892D0A3815D0BD9C00999EFF /* librubinius.dylib in Frameworks */,
+				891FF5E515D43740009CCF0C /* librubinius.dylib in Frameworks */,
 				89C93D7315BA87A70048668A /* Adobe AIR.framework in Frameworks */,
 				89A38853145E72F700E6C61A /* Cocoa.framework in Frameworks */,
 			);
@@ -47,7 +47,7 @@
 		89A38841145E727B00E6C61A = {
 			isa = PBXGroup;
 			children = (
-				89DA482815CEF69D00849819 /* librubinius.dylib */,
+				891FF5E415D43740009CCF0C /* librubinius.dylib */,
 				89414C2F15BFDF66009FADE4 /* libLLVMCore.a */,
 				89C93D7115BA87920048668A /* Adobe AIR.framework */,
 				89A38858145E72F700E6C61A /* FlashRuby */,
@@ -200,6 +200,7 @@
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				COPY_PHASE_STRIP = NO;
 				HEADER_SEARCH_PATHS = ../AdobeAIRSDK/include;
+				LD_DYLIB_INSTALL_NAME = /Users/kibiyama/git/flashruby/lib/debug/FlashRuby.framework/Versions/A/FlashRuby;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
 				STRIP_INSTALLED_PRODUCT = NO;
@@ -214,6 +215,7 @@
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				COPY_PHASE_STRIP = NO;
 				HEADER_SEARCH_PATHS = ../AdobeAIRSDK/include;
+				LD_DYLIB_INSTALL_NAME = /Users/kibiyama/git/flashruby/lib/release/FlashRuby.framework/Versions/A/FlashRuby;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
 				STRIP_INSTALLED_PRODUCT = NO;
@@ -269,6 +271,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/../rubinius/vm\"",
+					"\"$(SRCROOT)/../rubinius/bin\"",
 				);
 				MACH_O_TYPE = mh_dylib;
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
@@ -326,6 +329,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/../rubinius/vm\"",
+					"\"$(SRCROOT)/../rubinius/bin\"",
 				);
 				MACH_O_TYPE = mh_dylib;
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
@@ -353,7 +357,7 @@
 				89A38849145E727B00E6C61A /* release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = release;
+			defaultConfigurationName = debug;
 		};
 		89A38862145E72F700E6C61A /* Build configuration list for PBXNativeTarget "FlashRuby" */ = {
 			isa = XCConfigurationList;
@@ -362,7 +366,7 @@
 				89A38864145E72F700E6C61A /* release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = release;
+			defaultConfigurationName = debug;
 		};
 /* End XCConfigurationList section */
 	};

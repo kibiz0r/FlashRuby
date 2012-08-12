@@ -1,3 +1,11 @@
+ffffffffffffffffffffffffffffffff ea628753facfb5da1a723e83b79e9541 ffffffffffffffffffffffffffffffff 170 /Users/kibiyama/git/flashruby/FlashRubyOSX/../lib/release/FlashRuby.framework
+ffffffffffffffffffffffffffffffff 534b6a978f16f361709034f8f8fe9c33 ffffffffffffffffffffffffffffffff 18740 /Users/kibiyama/git/flashruby/FlashRubyOSX/../lib/release/FlashRuby.framework/Versions/A/FlashRuby
+0000000050221199000000000001d1e1 f69dd6095daa1d6fd947e14c0c748037 ffffffffffffffffffffffffffffffff 0 /Users/kibiyama/git/flashruby/FlashRubyOSX/obj/release/FlashRuby.build/Objects-normal/i386/FlashRuby.o
+00000000000000000000000000000000 0406f3b08baee74394a83b4953207143 ffffffffffffffffffffffffffffffff 26 /Users/kibiyama/git/flashruby/FlashRubyOSX/../lib/release/FlashRuby.framework/Resources
+00000000000000000000000000000000 edbc2dce61a9db8f484938f941cfc00a ffffffffffffffffffffffffffffffff 1 /Users/kibiyama/git/flashruby/FlashRubyOSX/../lib/release/FlashRuby.framework/Versions/Current
+00000000501e00e5000000000000002d 4f1e4030da65d76440dc9a586e0aedab ffffffffffffffffffffffffffffffff 92 /Users/kibiyama/git/flashruby/FlashRubyOSX/../lib/release/FlashRuby.framework/Versions/A/Resources/en.lproj/InfoPlist.strings
+00000000000000000000000000000000 02e446b2d373464052414c2c850e2d90 ffffffffffffffffffffffffffffffff 1254 /Users/kibiyama/git/flashruby/FlashRubyOSX/../lib/release/FlashRuby.framework/Versions/A/Resources/Info.plist
+00000000000000000000000000000000 34e833bfc782e65f1779fcf7a01549ad ffffffffffffffffffffffffffffffff 26 /Users/kibiyama/git/flashruby/FlashRubyOSX/../lib/release/FlashRuby.framework/FlashRuby
 ffffffffffffffffffffffffffffffff 993d10d3d36b641eded8b9180c2cfb86 ffffffffffffffffffffffffffffffff 0 /Users/kibiyama/git/flashruby/FlashRubyOSX/bin/Release/FlashRuby.framework
 00000000501e00e5000000000000002d 1b4ecb9ab42b6205831e2bdbb192c6ef ffffffffffffffffffffffffffffffff 0 /Users/kibiyama/git/flashruby/FlashRubyOSX/bin/Release/FlashRuby.framework/Versions/A/Resources/en.lproj/InfoPlist.strings
 ffffffffffffffffffffffffffffffff 15621ee701a5e7f8c35055b08b3a6904 ffffffffffffffffffffffffffffffff 0 /Users/kibiyama/git/flashruby/FlashRubyOSX/bin/Release/FlashRuby.framework/Versions/A/FlashRuby

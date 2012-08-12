@@ -2,14 +2,14 @@ TFlashRuby
 v5
 r1
 cCheck dependencies
-cSymLink /Users/kibiyama/git/flashruby/FlashRubyOSX/bin/Release/FlashRuby.framework/FlashRuby Versions/Current/FlashRuby
-cSymLink /Users/kibiyama/git/flashruby/FlashRubyOSX/bin/Release/FlashRuby.framework/Resources Versions/Current/Resources
-cSymLink /Users/kibiyama/git/flashruby/FlashRubyOSX/bin/Release/FlashRuby.framework/Versions/Current A
-cProcessInfoPlistFile /Users/kibiyama/git/flashruby/FlashRubyOSX/bin/Release/FlashRuby.framework/Versions/A/Resources/Info.plist FlashRuby/FlashRuby-Info.plist
-cCompileC obj/Release/FlashRuby.build/Objects-normal/i386/FlashRuby.o /Users/kibiyama/git/flashruby/FlashRubyOSX/FlashRuby/FlashRuby.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
-cLd /Users/kibiyama/git/flashruby/FlashRubyOSX/bin/Release/FlashRuby.framework/Versions/A/FlashRuby normal i386
-cCopyStringsFile /Users/kibiyama/git/flashruby/FlashRubyOSX/bin/Release/FlashRuby.framework/Versions/A/Resources/en.lproj/InfoPlist.strings FlashRuby/en.lproj/InfoPlist.strings
-cTouch /Users/kibiyama/git/flashruby/FlashRubyOSX/bin/Release/FlashRuby.framework
+cSymLink /Users/kibiyama/git/flashruby/FlashRubyOSX/../lib/release/FlashRuby.framework/FlashRuby Versions/Current/FlashRuby
+cSymLink /Users/kibiyama/git/flashruby/FlashRubyOSX/../lib/release/FlashRuby.framework/Resources Versions/Current/Resources
+cSymLink /Users/kibiyama/git/flashruby/FlashRubyOSX/../lib/release/FlashRuby.framework/Versions/Current A
+cProcessInfoPlistFile /Users/kibiyama/git/flashruby/FlashRubyOSX/../lib/release/FlashRuby.framework/Versions/A/Resources/Info.plist FlashRuby/FlashRuby-Info.plist
+cCompileC obj/release/FlashRuby.build/Objects-normal/i386/FlashRuby.o /Users/kibiyama/git/flashruby/FlashRubyOSX/FlashRuby/FlashRuby.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
+cLd /Users/kibiyama/git/flashruby/FlashRubyOSX/../lib/release/FlashRuby.framework/Versions/A/FlashRuby normal i386
+cCopyStringsFile /Users/kibiyama/git/flashruby/FlashRubyOSX/../lib/release/FlashRuby.framework/Versions/A/Resources/en.lproj/InfoPlist.strings FlashRuby/en.lproj/InfoPlist.strings
+cTouch /Users/kibiyama/git/flashruby/FlashRubyOSX/../lib/release/FlashRuby.framework
 
 N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.7.sdk
 c000000004FF736BA00000000000000CC
@@ -21,20 +21,418 @@ c000000004FC3FCCC0000000000002470
 t1338244300
 s9328
 
+N/Users/kibiyama/git/flashruby/FlashRubyOSX/../AdobeAIRSDK/include/FlashRuntimeExtensions.h
+c00000000501E00D10000000000004D54
+t1344143569
+s19796
+
 N/Users/kibiyama/git/flashruby/FlashRubyOSX/../AdobeAIRSDK/runtimes/air/mac/Adobe AIR.framework/Adobe AIR
 c00000000501E00DC00000000015D5D88
 t1344143580
 s22896008
+
+N/Users/kibiyama/git/flashruby/FlashRubyOSX/../lib/release/FlashRuby.framework
+t1344540817
+s170
+
+N/Users/kibiyama/git/flashruby/FlashRubyOSX/../lib/release/FlashRuby.framework/FlashRuby
+t3
+s26
+
+N/Users/kibiyama/git/flashruby/FlashRubyOSX/../lib/release/FlashRuby.framework/Resources
+t3
+s26
+
+N/Users/kibiyama/git/flashruby/FlashRubyOSX/../lib/release/FlashRuby.framework/Versions/A/FlashRuby
+t1344540408
+s18740
+
+N/Users/kibiyama/git/flashruby/FlashRubyOSX/../lib/release/FlashRuby.framework/Versions/A/Resources/Info.plist
+t1344538071
+s1254
+
+N/Users/kibiyama/git/flashruby/FlashRubyOSX/../lib/release/FlashRuby.framework/Versions/A/Resources/en.lproj/InfoPlist.strings
+t1344538071
+s92
+
+N/Users/kibiyama/git/flashruby/FlashRubyOSX/../lib/release/FlashRuby.framework/Versions/Current
+t3
+s1
+
+N/Users/kibiyama/git/flashruby/FlashRubyOSX/../rubinius/bin/librubinius.dylib
+c000000005023FF7A0000000000F2C650
+t1344536442
+s15910480
+
+N/Users/kibiyama/git/flashruby/FlashRubyOSX/../rubinius/vendor/libtommath/tommath.h
+c0000000050220D5500000000000046B1
+t1344408917
+s18097
+
+N/Users/kibiyama/git/flashruby/FlashRubyOSX/../rubinius/vendor/libtommath/tommath_class.h
+c0000000050220D550000000000005243
+t1344408917
+s21059
+
+N/Users/kibiyama/git/flashruby/FlashRubyOSX/../rubinius/vendor/libtommath/tommath_superclass.h
+c0000000050220D550000000000000906
+t1344408917
+s2310
+
+N/Users/kibiyama/git/flashruby/FlashRubyOSX/../rubinius/vm/auxiliary_threads.hpp
+c0000000050220D55000000000000045D
+t1344408917
+s1117
+
+N/Users/kibiyama/git/flashruby/FlashRubyOSX/../rubinius/vm/bug.hpp
+c0000000050220D5500000000000000F5
+t1344408917
+s245
+
+N/Users/kibiyama/git/flashruby/FlashRubyOSX/../rubinius/vm/builtin/array.hpp
+c0000000050220D5500000000000007B1
+t1344408917
+s1969
+
+N/Users/kibiyama/git/flashruby/FlashRubyOSX/../rubinius/vm/builtin/bignum.hpp
+c0000000050220D550000000000001A05
+t1344408917
+s6661
+
+N/Users/kibiyama/git/flashruby/FlashRubyOSX/../rubinius/vm/builtin/bytearray.hpp
+c0000000050220D550000000000000AB7
+t1344408917
+s2743
+
+N/Users/kibiyama/git/flashruby/FlashRubyOSX/../rubinius/vm/builtin/class.hpp
+c0000000050220D5500000000000008CF
+t1344408917
+s2255
+
+N/Users/kibiyama/git/flashruby/FlashRubyOSX/../rubinius/vm/builtin/constantscope.hpp
+c0000000050220D5500000000000006FD
+t1344408917
+s1789
+
+N/Users/kibiyama/git/flashruby/FlashRubyOSX/../rubinius/vm/builtin/exception.hpp
+c0000000050220D550000000000001485
+t1344408917
+s5253
+
+N/Users/kibiyama/git/flashruby/FlashRubyOSX/../rubinius/vm/builtin/fixnum.hpp
+c0000000050220D550000000000001C9F
+t1344408917
+s7327
+
+N/Users/kibiyama/git/flashruby/FlashRubyOSX/../rubinius/vm/builtin/integer.hpp
+c0000000050220D550000000000000588
+t1344408917
+s1416
+
+N/Users/kibiyama/git/flashruby/FlashRubyOSX/../rubinius/vm/builtin/module.hpp
+c0000000050220D550000000000000C7B
+t1344408917
+s3195
+
+N/Users/kibiyama/git/flashruby/FlashRubyOSX/../rubinius/vm/builtin/object.hpp
+c0000000050220D5500000000000036B8
+t1344408917
+s14008
+
+N/Users/kibiyama/git/flashruby/FlashRubyOSX/../rubinius/vm/builtin/string.hpp
+c0000000050220D5500000000000021E2
+t1344408917
+s8674
+
+N/Users/kibiyama/git/flashruby/FlashRubyOSX/../rubinius/vm/builtin/symbol.hpp
+c0000000050220D5500000000000007E7
+t1344408917
+s2023
+
+N/Users/kibiyama/git/flashruby/FlashRubyOSX/../rubinius/vm/builtin/system.hpp
+c0000000050220D5500000000000034CA
+t1344408917
+s13514
+
+N/Users/kibiyama/git/flashruby/FlashRubyOSX/../rubinius/vm/call_frame_list.hpp
+c0000000050220D5500000000000000BF
+t1344408917
+s191
+
+N/Users/kibiyama/git/flashruby/FlashRubyOSX/../rubinius/vm/capi/19/include/ruby.h
+c0000000050220D550000000000000225
+t1344408917
+s549
+
+N/Users/kibiyama/git/flashruby/FlashRubyOSX/../rubinius/vm/capi/19/include/ruby/config.h
+c00000000502213C70000000000000336
+t1344410567
+s822
+
+N/Users/kibiyama/git/flashruby/FlashRubyOSX/../rubinius/vm/capi/19/include/ruby/defines.h
+c0000000050220D55000000000000037F
+t1344408917
+s895
+
+N/Users/kibiyama/git/flashruby/FlashRubyOSX/../rubinius/vm/capi/19/include/ruby/intern.h
+c0000000050220D55000000000000008C
+t1344408917
+s140
+
+N/Users/kibiyama/git/flashruby/FlashRubyOSX/../rubinius/vm/capi/19/include/ruby/mri_oop.h
+c00000000502213C70000000000000C99
+t1344410567
+s3225
+
+N/Users/kibiyama/git/flashruby/FlashRubyOSX/../rubinius/vm/capi/19/include/ruby/ruby.h
+c0000000050220D55000000000000F3E5
+t1344408917
+s62437
+
+N/Users/kibiyama/git/flashruby/FlashRubyOSX/../rubinius/vm/config.h
+c0000000050220D550000000000000060
+t1344408917
+s96
+
+N/Users/kibiyama/git/flashruby/FlashRubyOSX/../rubinius/vm/config_parser.hpp
+c0000000050220D550000000000000441
+t1344408917
+s1089
+
+N/Users/kibiyama/git/flashruby/FlashRubyOSX/../rubinius/vm/configuration.hpp
+c0000000050220D5500000000000002FD
+t1344408917
+s765
+
+N/Users/kibiyama/git/flashruby/FlashRubyOSX/../rubinius/vm/detection.hpp
+c0000000050220D5500000000000003B4
+t1344408917
+s948
+
+N/Users/kibiyama/git/flashruby/FlashRubyOSX/../rubinius/vm/environment.hpp
+c0000000050220D55000000000000099C
+t1344408917
+s2460
+
+N/Users/kibiyama/git/flashruby/FlashRubyOSX/../rubinius/vm/exception.hpp
+c0000000050220D550000000000000B21
+t1344408917
+s2849
+
+N/Users/kibiyama/git/flashruby/FlashRubyOSX/../rubinius/vm/executor.hpp
+c0000000050220D5500000000000001D3
+t1344408917
+s467
+
+N/Users/kibiyama/git/flashruby/FlashRubyOSX/../rubinius/vm/fiber_stack.hpp
+c0000000050220D5500000000000005F0
+t1344408917
+s1520
+
+N/Users/kibiyama/git/flashruby/FlashRubyOSX/../rubinius/vm/gc/managed.hpp
+c0000000050220D5500000000000008FF
+t1344408917
+s2303
+
+N/Users/kibiyama/git/flashruby/FlashRubyOSX/../rubinius/vm/gc/object_mark.hpp
+c0000000050220D550000000000000283
+t1344408917
+s643
+
+N/Users/kibiyama/git/flashruby/FlashRubyOSX/../rubinius/vm/gc/root.hpp
+c0000000050220D550000000000001030
+t1344408917
+s4144
+
+N/Users/kibiyama/git/flashruby/FlashRubyOSX/../rubinius/vm/gc/root_buffer.hpp
+c0000000050220D550000000000000346
+t1344408917
+s838
+
+N/Users/kibiyama/git/flashruby/FlashRubyOSX/../rubinius/vm/gc/slab.hpp
+c0000000050220D5500000000000007BD
+t1344408917
+s1981
+
+N/Users/kibiyama/git/flashruby/FlashRubyOSX/../rubinius/vm/gc/variable_buffer.hpp
+c0000000050220D5500000000000003B1
+t1344408917
+s945
+
+N/Users/kibiyama/git/flashruby/FlashRubyOSX/../rubinius/vm/gen/config.h
+c00000000502213C70000000000000692
+t1344410567
+s1682
+
+N/Users/kibiyama/git/flashruby/FlashRubyOSX/../rubinius/vm/gen/config_variables.h
+c00000000502213CF0000000000001DD7
+t1344410575
+s7639
+
+N/Users/kibiyama/git/flashruby/FlashRubyOSX/../rubinius/vm/gen/kind_of.hpp
+c00000000502211A50000000000002DBE
+t1344410021
+s11710
+
+N/Users/kibiyama/git/flashruby/FlashRubyOSX/../rubinius/vm/gen/object_types.hpp
+c00000000502211A50000000000000496
+t1344410021
+s1174
+
+N/Users/kibiyama/git/flashruby/FlashRubyOSX/../rubinius/vm/gen/primitives_declare.hpp
+c00000000502211A500000000000122B5
+t1344410021
+s74421
+
+N/Users/kibiyama/git/flashruby/FlashRubyOSX/../rubinius/vm/globals.hpp
+c0000000050220D550000000000001AC4
+t1344408917
+s6852
+
+N/Users/kibiyama/git/flashruby/FlashRubyOSX/../rubinius/vm/kcode.hpp
+c0000000050220D5500000000000001AC
+t1344408917
+s428
 
 N/Users/kibiyama/git/flashruby/FlashRubyOSX/../rubinius/vm/librubinius.dylib
 c00000000502158660000000000F2C8F0
 t1344362598
 s15911152
 
+N/Users/kibiyama/git/flashruby/FlashRubyOSX/../rubinius/vm/linkedlist.hpp
+c0000000050220D5500000000000005DB
+t1344408917
+s1499
+
+N/Users/kibiyama/git/flashruby/FlashRubyOSX/../rubinius/vm/lock.hpp
+c0000000050220D550000000000001419
+t1344408917
+s5145
+
+N/Users/kibiyama/git/flashruby/FlashRubyOSX/../rubinius/vm/lookup_data.hpp
+c0000000050220D55000000000000015C
+t1344408917
+s348
+
+N/Users/kibiyama/git/flashruby/FlashRubyOSX/../rubinius/vm/missing/time.h
+c0000000050220D550000000000000263
+t1344408917
+s611
+
+N/Users/kibiyama/git/flashruby/FlashRubyOSX/../rubinius/vm/object_types.hpp
+c0000000050220D550000000000000082
+t1344408917
+s130
+
+N/Users/kibiyama/git/flashruby/FlashRubyOSX/../rubinius/vm/object_utils.hpp
+c0000000050220D550000000000001923
+t1344408917
+s6435
+
+N/Users/kibiyama/git/flashruby/FlashRubyOSX/../rubinius/vm/on_stack.hpp
+c0000000050220D550000000000000C43
+t1344408917
+s3139
+
+N/Users/kibiyama/git/flashruby/FlashRubyOSX/../rubinius/vm/oop.hpp
+c0000000050220D550000000000004349
+t1344408917
+s17225
+
+N/Users/kibiyama/git/flashruby/FlashRubyOSX/../rubinius/vm/prelude.hpp
+c0000000050220D5500000000000004A2
+t1344408917
+s1186
+
+N/Users/kibiyama/git/flashruby/FlashRubyOSX/../rubinius/vm/primitives.hpp
+c0000000050220D55000000000000083E
+t1344408917
+s2110
+
+N/Users/kibiyama/git/flashruby/FlashRubyOSX/../rubinius/vm/raise_reason.hpp
+c0000000050220D5500000000000000C3
+t1344408917
+s195
+
+N/Users/kibiyama/git/flashruby/FlashRubyOSX/../rubinius/vm/shared_state.hpp
+c0000000050220D550000000000001823
+t1344408917
+s6179
+
+N/Users/kibiyama/git/flashruby/FlashRubyOSX/../rubinius/vm/state.hpp
+c0000000050220D550000000000000C1C
+t1344408917
+s3100
+
+N/Users/kibiyama/git/flashruby/FlashRubyOSX/../rubinius/vm/stats.hpp
+c0000000050220D5500000000000000D9
+t1344408917
+s217
+
+N/Users/kibiyama/git/flashruby/FlashRubyOSX/../rubinius/vm/symboltable.hpp
+c0000000050220D5500000000000009E4
+t1344408917
+s2532
+
+N/Users/kibiyama/git/flashruby/FlashRubyOSX/../rubinius/vm/thread_state.hpp
+c0000000050220D56000000000000056B
+t1344408918
+s1387
+
+N/Users/kibiyama/git/flashruby/FlashRubyOSX/../rubinius/vm/type_info.hpp
+c0000000050220D5600000000000011EA
+t1344408918
+s4586
+
+N/Users/kibiyama/git/flashruby/FlashRubyOSX/../rubinius/vm/util/address.hpp
+c0000000050220D5600000000000006BF
+t1344408918
+s1727
+
+N/Users/kibiyama/git/flashruby/FlashRubyOSX/../rubinius/vm/util/atomic.hpp
+c0000000050220D56000000000000176C
+t1344408918
+s5996
+
+N/Users/kibiyama/git/flashruby/FlashRubyOSX/../rubinius/vm/util/atomic_types.hpp
+c0000000050220D56000000000000031C
+t1344408918
+s796
+
+N/Users/kibiyama/git/flashruby/FlashRubyOSX/../rubinius/vm/util/configuration.hpp
+c0000000050220D560000000000001B2E
+t1344408918
+s6958
+
+N/Users/kibiyama/git/flashruby/FlashRubyOSX/../rubinius/vm/util/optimize.hpp
+c0000000050220D560000000000000141
+t1344408918
+s321
+
+N/Users/kibiyama/git/flashruby/FlashRubyOSX/../rubinius/vm/util/refcount.hpp
+c0000000050220D560000000000000154
+t1344408918
+s340
+
+N/Users/kibiyama/git/flashruby/FlashRubyOSX/../rubinius/vm/util/thread.hpp
+c0000000050220D560000000000003178
+t1344408918
+s12664
+
+N/Users/kibiyama/git/flashruby/FlashRubyOSX/../rubinius/vm/vm.hpp
+c0000000050220D560000000000002A71
+t1344408918
+s10865
+
 N/Users/kibiyama/git/flashruby/FlashRubyOSX/FlashRuby/FlashRuby.cpp
-c0000000050208AD10000000000001971
-t1344309969
-s6513
+c00000000502410A80000000000000EB1
+t1344540840
+s3761
+
+N/Users/kibiyama/git/flashruby/FlashRubyOSX/FlashRuby/FlashRuby.h
+c00000000501E00E50000000000000252
+t1344143589
+s594
 
 N/Users/kibiyama/git/flashruby/FlashRubyOSX/FlashRuby/en.lproj/InfoPlist.strings
 c00000000501E00E5000000000000002D
@@ -78,14 +476,26 @@ N/Users/kibiyama/git/flashruby/FlashRubyOSX/obj/Release/FlashRuby.build/Objects-
 t2
 s0
 
+N/Users/kibiyama/git/flashruby/FlashRubyOSX/obj/release/FlashRuby.build/Objects-normal/i386/FlashRuby.LinkFileList
+c000000005023FFC40000000000000067
+t1344536516
+s103
+
+N/Users/kibiyama/git/flashruby/FlashRubyOSX/obj/release/FlashRuby.build/Objects-normal/i386/FlashRuby.o
+t2
+s0
+
 NFlashRuby/FlashRuby-Info.plist
 c00000000501E00E500000000000003C1
 t1344143589
 s961
 
+CBuild AST from /Users/kibiyama/git/flashruby/FlashRubyOSX/FlashRuby/FlashRuby.cpp
+r0
+
 CCheck dependencies
 r0
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependenciesb4e455ec3ed2b541^23495cec3ed2b541^---0#1#0#--18"Check dependencies36"679BD01E-6DFD-4018-9C67-297CB655B88C-
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies74442e2948d4b541^36cc382948d4b541^---0#1#0#--18"Check dependencies36"EA2E5DB2-61CD-4E44-AD98-ECE0E257265F-
 
 CCompileC obj/Release/FlashRuby.build/Objects-normal/i386/FlashRuby.o /Users/kibiyama/git/flashruby/FlashRubyOSX/FlashRuby/FlashRuby.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
 s366100204.389087
@@ -175,6 +585,76 @@ o              ^
 o14 warnings generated.
 lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection74"Compile /Users/kibiyama/git/flashruby/FlashRubyOSX/FlashRuby/FlashRuby.cpp6cb163ec3ed2b541^1991d0ec3ed2b541^-4319"In file included from /Users/kibiyama/git/flashruby/FlashRubyOSX/FlashRuby/FlashRuby.cpp:6:In file included from ../rubinius/vm/environment.hpp:7:In file included from ../rubinius/vm/vm.hpp:6:In file included from ../rubinius/vm/globals.hpp:28:In file included from ../rubinius/vm/gc/root.hpp:8:../rubinius/vm/oop.hpp:40:9: warning: 'TAG_REF_MASK' macro redefined#define TAG_REF_MASK     3        ^../rubinius/vm/capi/19/include/ruby/mri_oop.h:81:9: note: previous definition is here#define TAG_REF_MASK        0x3        ^In file included from /Users/kibiyama/git/flashruby/FlashRubyOSX/FlashRuby/FlashRuby.cpp:6:In file included from ../rubinius/vm/environment.hpp:7:In file included from ../rubinius/vm/vm.hpp:6:In file included from ../rubinius/vm/globals.hpp:28:In file included from ../rubinius/vm/gc/root.hpp:8:../rubinius/vm/oop.hpp:44:9: warning: 'TAG_FIXNUM_SHIFT' macro redefined#define TAG_FIXNUM_SHIFT 1        ^../rubinius/vm/capi/19/include/ruby/mri_oop.h:88:9: note: previous definition is here#define TAG_FIXNUM_SHIFT    0x1        ^In file included from /Users/kibiyama/git/flashruby/FlashRubyOSX/FlashRuby/FlashRuby.cpp:6:In file included from ../rubinius/vm/environment.hpp:7:In file included from ../rubinius/vm/vm.hpp:6:In file included from ../rubinius/vm/globals.hpp:28:In file included from ../rubinius/vm/gc/root.hpp:8:../rubinius/vm/oop.hpp:45:9: warning: 'TAG_FIXNUM_MASK' macro redefined#define TAG_FIXNUM_MASK  1        ^../rubinius/vm/capi/19/include/ruby/mri_oop.h:89:9: note: previous definition is here#define TAG_FIXNUM_MASK     0x1        ^In file included from /Users/kibiyama/git/flashruby/FlashRubyOSX/FlashRuby/FlashRuby.cpp:6:In file included from ../rubinius/vm/environment.hpp:7:In file included from ../rubinius/vm/vm.hpp:6:In file included from ../rubinius/vm/globals.hpp:28:In file included from ../rubinius/vm/gc/root.hpp:8:../rubinius/vm/oop.hpp:51:9: warning: 'TAG_SYMBOL_MASK' macro redefined#define TAG_SYMBOL_MASK  7        ^../rubinius/vm/capi/19/include/ruby/mri_oop.h:95:9: note: previous definition is here#define TAG_SYMBOL_MASK     0x7        ^/Users/kibiyama/git/flashruby/FlashRubyOSX/FlashRuby/FlashRuby.cpp:62:20: warning: conversion from string literal to 'char *' is deprecated [-Wdeprecated-writable-strings]  char* argv[] = { "/Users/kibiyama/git/flashruby2/rubinius/bin/rbx" };                   ^/Users/kibiyama/git/flashruby/FlashRubyOSX/FlashRuby/FlashRuby.cpp:134:21: warning: unused variable 'code_loader' [-Wunused-variable]  rubinius::Object* code_loader = G(rubinius)->get_const(state, "CodeLoader");                    ^/Users/kibiyama/git/flashruby/FlashRubyOSX/FlashRuby/FlashRuby.cpp:138:15: warning: unused variable 'message3' [-Wunused-variable]  const char* message3 = exception3->send(state, NULL, state->symbol("backtrace"))->send(state, NULL, state->symbol("inspect"))->to_s(state)->c_str(state);              ^/Users/kibiyama/git/flashruby/FlashRubyOSX/FlashRuby/FlashRuby.cpp:121:9: warning: unused variable 'baz' [-Wunused-variable]  int (*baz)(const char *, struct stat *) = ffi_stat;        ^/Users/kibiyama/git/flashruby/FlashRubyOSX/FlashRuby/FlashRuby.cpp:136:8: warning: unused variable 'success' [-Wunused-variable]  bool success = code_loader_inst->send(state, NULL, state->symbol("require"))->true_p();       ^/Users/kibiyama/git/flashruby/FlashRubyOSX/FlashRuby/FlashRuby.cpp:122:11: warning: unused variable 'baz2' [-Wunused-variable]  char* (*baz2)(const char*, const char*) = crypt;          ^/Users/kibiyama/git/flashruby/FlashRubyOSX/FlashRuby/FlashRuby.cpp:126:9: warning: unused variable 'bar' [-Wunused-variable]  void* bar = dlsym(RTLD_SELF, "ffi_stat");        ^/Users/kibiyama/git/flashruby/FlashRubyOSX/FlashRuby/FlashRuby.cpp:145:8: warning: unused variable 'is_true' [-Wunused-variable]  bool is_true = result->true_p();       ^/Users/kibiyama/git/flashruby/FlashRubyOSX/FlashRuby/FlashRuby.cpp:143:8: warning: unused variable 'require' [-Wunused-variable]  bool require = kernel->respond_to_public(state, state->symbol("require"));       ^/Users/kibiyama/git/flashruby/FlashRubyOSX/FlashRuby/FlashRuby.cpp:128:15: warning: unused variable 'err' [-Wunused-variable]  const char* err = dlerror();              ^14 warnings generated.14(36%IDEClangDiagnosticActivityLogMessage2@30"'TAG_REF_MASK' macro redefined-366100204#18446744073709551615#0#6(2@91"In file included from /Users/kibiyama/git/flashruby/FlashRubyOSX/FlashRuby/FlashRuby.cpp:6:-366100204#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic23%DVTTextDocumentLocation3@82"file://localhost/Users/kibiyama/git/flashruby/FlashRubyOSX/FlashRuby/FlashRuby.cpp0000000000000000^5#9#5#9#108#0#21"Clang LLVM 1.0 Notice--2@55"In file included from ../rubinius/vm/environment.hpp:7:-366100204#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@73"file://localhost/Users/kibiyama/git/flashruby/rubinius/vm/environment.hpp0000000000000000^6#9#6#9#106#0#21"Clang LLVM 1.0 Notice--2@46"In file included from ../rubinius/vm/vm.hpp:6:-366100204#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@64"file://localhost/Users/kibiyama/git/flashruby/rubinius/vm/vm.hpp0000000000000000^5#9#5#9#71#0#21"Clang LLVM 1.0 Notice--2@52"In file included from ../rubinius/vm/globals.hpp:28:-366100204#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@69"file://localhost/Users/kibiyama/git/flashruby/rubinius/vm/globals.hpp0000000000000000^27#9#27#9#908#0#21"Clang LLVM 1.0 Notice--2@51"In file included from ../rubinius/vm/gc/root.hpp:8:-366100204#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@69"file://localhost/Users/kibiyama/git/flashruby/rubinius/vm/gc/root.hpp0000000000000000^7#9#7#9#107#0#21"Clang LLVM 1.0 Notice--2@27"Previous definition is here-366100204#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@88"file://localhost/Users/kibiyama/git/flashruby/rubinius/vm/capi/19/include/ruby/mri_oop.h0000000000000000^80#8#80#8#2372#0#21"Clang LLVM 1.0 Notice--1#27"com.apple.dt.IDE.diagnostic3@65"file://localhost/Users/kibiyama/git/flashruby/rubinius/vm/oop.hpp0000000000000000^39#8#39#8#807#0#29"Lexical or Preprocessor Issue--2@34"'TAG_FIXNUM_SHIFT' macro redefined-366100204#18446744073709551615#0#6(2@91"In file included from /Users/kibiyama/git/flashruby/FlashRubyOSX/FlashRuby/FlashRuby.cpp:6:-366100204#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@82"file://localhost/Users/kibiyama/git/flashruby/FlashRubyOSX/FlashRuby/FlashRuby.cpp0000000000000000^5#9#5#9#108#0#21"Clang LLVM 1.0 Notice--2@55"In file included from ../rubinius/vm/environment.hpp:7:-366100204#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@73"file://localhost/Users/kibiyama/git/flashruby/rubinius/vm/environment.hpp0000000000000000^6#9#6#9#106#0#21"Clang LLVM 1.0 Notice--2@46"In file included from ../rubinius/vm/vm.hpp:6:-366100204#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@64"file://localhost/Users/kibiyama/git/flashruby/rubinius/vm/vm.hpp0000000000000000^5#9#5#9#71#0#21"Clang LLVM 1.0 Notice--2@52"In file included from ../rubinius/vm/globals.hpp:28:-366100204#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@69"file://localhost/Users/kibiyama/git/flashruby/rubinius/vm/globals.hpp0000000000000000^27#9#27#9#908#0#21"Clang LLVM 1.0 Notice--2@51"In file included from ../rubinius/vm/gc/root.hpp:8:-366100204#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@69"file://localhost/Users/kibiyama/git/flashruby/rubinius/vm/gc/root.hpp0000000000000000^7#9#7#9#107#0#21"Clang LLVM 1.0 Notice--2@27"Previous definition is here-366100204#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@88"file://localhost/Users/kibiyama/git/flashruby/rubinius/vm/capi/19/include/ruby/mri_oop.h0000000000000000^87#8#87#8#2503#0#21"Clang LLVM 1.0 Notice--1#27"com.apple.dt.IDE.diagnostic3@65"file://localhost/Users/kibiyama/git/flashruby/rubinius/vm/oop.hpp0000000000000000^43#8#43#8#891#0#29"Lexical or Preprocessor Issue--2@33"'TAG_FIXNUM_MASK' macro redefined-366100204#18446744073709551615#0#6(2@91"In file included from /Users/kibiyama/git/flashruby/FlashRubyOSX/FlashRuby/FlashRuby.cpp:6:-366100204#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@82"file://localhost/Users/kibiyama/git/flashruby/FlashRubyOSX/FlashRuby/FlashRuby.cpp0000000000000000^5#9#5#9#108#0#21"Clang LLVM 1.0 Notice--2@55"In file included from ../rubinius/vm/environment.hpp:7:-366100204#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@73"file://localhost/Users/kibiyama/git/flashruby/rubinius/vm/environment.hpp0000000000000000^6#9#6#9#106#0#21"Clang LLVM 1.0 Notice--2@46"In file included from ../rubinius/vm/vm.hpp:6:-366100204#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@64"file://localhost/Users/kibiyama/git/flashruby/rubinius/vm/vm.hpp0000000000000000^5#9#5#9#71#0#21"Clang LLVM 1.0 Notice--2@52"In file included from ../rubinius/vm/globals.hpp:28:-366100204#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@69"file://localhost/Users/kibiyama/git/flashruby/rubinius/vm/globals.hpp0000000000000000^27#9#27#9#908#0#21"Clang LLVM 1.0 Notice--2@51"In file included from ../rubinius/vm/gc/root.hpp:8:-366100204#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@69"file://localhost/Users/kibiyama/git/flashruby/rubinius/vm/gc/root.hpp0000000000000000^7#9#7#9#107#0#21"Clang LLVM 1.0 Notice--2@27"Previous definition is here-366100204#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@88"file://localhost/Users/kibiyama/git/flashruby/rubinius/vm/capi/19/include/ruby/mri_oop.h0000000000000000^88#8#88#8#2535#0#21"Clang LLVM 1.0 Notice--1#27"com.apple.dt.IDE.diagnostic3@65"file://localhost/Users/kibiyama/git/flashruby/rubinius/vm/oop.hpp0000000000000000^44#8#44#8#918#0#29"Lexical or Preprocessor Issue--2@33"'TAG_SYMBOL_MASK' macro redefined-366100204#18446744073709551615#0#6(2@91"In file included from /Users/kibiyama/git/flashruby/FlashRubyOSX/FlashRuby/FlashRuby.cpp:6:-366100204#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@82"file://localhost/Users/kibiyama/git/flashruby/FlashRubyOSX/FlashRuby/FlashRuby.cpp0000000000000000^5#9#5#9#108#0#21"Clang LLVM 1.0 Notice--2@55"In file included from ../rubinius/vm/environment.hpp:7:-366100204#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@73"file://localhost/Users/kibiyama/git/flashruby/rubinius/vm/environment.hpp0000000000000000^6#9#6#9#106#0#21"Clang LLVM 1.0 Notice--2@46"In file included from ../rubinius/vm/vm.hpp:6:-366100204#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@64"file://localhost/Users/kibiyama/git/flashruby/rubinius/vm/vm.hpp0000000000000000^5#9#5#9#71#0#21"Clang LLVM 1.0 Notice--2@52"In file included from ../rubinius/vm/globals.hpp:28:-366100204#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@69"file://localhost/Users/kibiyama/git/flashruby/rubinius/vm/globals.hpp0000000000000000^27#9#27#9#908#0#21"Clang LLVM 1.0 Notice--2@51"In file included from ../rubinius/vm/gc/root.hpp:8:-366100204#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@69"file://localhost/Users/kibiyama/git/flashruby/rubinius/vm/gc/root.hpp0000000000000000^7#9#7#9#107#0#21"Clang LLVM 1.0 Notice--2@27"Previous definition is here-366100204#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@88"file://localhost/Users/kibiyama/git/flashruby/rubinius/vm/capi/19/include/ruby/mri_oop.h0000000000000000^94#8#94#8#2642#0#21"Clang LLVM 1.0 Notice--1#27"com.apple.dt.IDE.diagnostic3@65"file://localhost/Users/kibiyama/git/flashruby/rubinius/vm/oop.hpp0000000000000000^50#8#50#8#1032#0#29"Lexical or Preprocessor Issue--2@56"Conversion from string literal to 'char *' is deprecated-366100204#18446744073709551615#0#-1#27"com.apple.dt.IDE.diagnostic3@82"file://localhost/Users/kibiyama/git/flashruby/FlashRubyOSX/FlashRuby/FlashRuby.cpp0000000000000000^61#19#61#19#1790#0#14"Semantic Issue--2@29"Unused variable 'code_loader'-366100204#18446744073709551615#0#-1#27"com.apple.dt.IDE.diagnostic3@82"file://localhost/Users/kibiyama/git/flashruby/FlashRubyOSX/FlashRuby/FlashRuby.cpp0000000000000000^133#20#133#20#4495#0#19"Unused Entity Issue--2@26"Unused variable 'message3'-366100204#18446744073709551615#0#-1#27"com.apple.dt.IDE.diagnostic3@82"file://localhost/Users/kibiyama/git/flashruby/FlashRubyOSX/FlashRuby/FlashRuby.cpp0000000000000000^137#14#137#14#4826#0#19"Unused Entity Issue--2@21"Unused variable 'baz'-366100204#18446744073709551615#0#-1#27"com.apple.dt.IDE.diagnostic3@82"file://localhost/Users/kibiyama/git/flashruby/FlashRubyOSX/FlashRuby/FlashRuby.cpp0000000000000000^120#8#120#8#3858#0#19"Unused Entity Issue--2@25"Unused variable 'success'-366100204#18446744073709551615#0#-1#27"com.apple.dt.IDE.diagnostic3@82"file://localhost/Users/kibiyama/git/flashruby/FlashRubyOSX/FlashRuby/FlashRuby.cpp0000000000000000^135#7#135#7#4649#0#19"Unused Entity Issue--2@22"Unused variable 'baz2'-366100204#18446744073709551615#0#-1#27"com.apple.dt.IDE.diagnostic3@82"file://localhost/Users/kibiyama/git/flashruby/FlashRubyOSX/FlashRuby/FlashRuby.cpp0000000000000000^121#10#121#10#3914#0#19"Unused Entity Issue--2@21"Unused variable 'bar'-366100204#18446744073709551615#0#-1#27"com.apple.dt.IDE.diagnostic3@82"file://localhost/Users/kibiyama/git/flashruby/FlashRubyOSX/FlashRuby/FlashRuby.cpp0000000000000000^125#8#125#8#4117#0#19"Unused Entity Issue--2@25"Unused variable 'is_true'-366100204#18446744073709551615#0#-1#27"com.apple.dt.IDE.diagnostic3@82"file://localhost/Users/kibiyama/git/flashruby/FlashRubyOSX/FlashRuby/FlashRuby.cpp0000000000000000^144#7#144#7#5396#0#19"Unused Entity Issue--2@25"Unused variable 'require'-366100204#18446744073709551615#0#-1#27"com.apple.dt.IDE.diagnostic3@82"file://localhost/Users/kibiyama/git/flashruby/FlashRubyOSX/FlashRuby/FlashRuby.cpp0000000000000000^142#7#142#7#5223#0#19"Unused Entity Issue--2@21"Unused variable 'err'-366100204#18446744073709551615#0#-1#27"com.apple.dt.IDE.diagnostic3@82"file://localhost/Users/kibiyama/git/flashruby/FlashRubyOSX/FlashRuby/FlashRuby.cpp0000000000000000^127#14#127#14#4209#0#19"Unused Entity Issue--0#0#0#-19%DVTDocumentLocation4@82"file://localhost/Users/kibiyama/git/flashruby/FlashRubyOSX/FlashRuby/FlashRuby.cpp0000000000000000^2470"CompileC obj/Release/FlashRuby.build/Objects-normal/i386/FlashRuby.o FlashRuby/FlashRuby.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/kibiyama/git/flashruby/FlashRubyOSX    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch i386 -fmessage-length=0 -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wmissing-prototypes -Wreturn-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-sign-compare -Wshorten-64-to-32 -Wno-newline-eof -Wc++11-extensions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.7.sdk -fasm-blocks -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.7 -g -fvisibility-inlines-hidden -Wno-conversion -Wno-sign-conversion -iquote /Users/kibiyama/git/flashruby/FlashRubyOSX/obj/Release/FlashRuby.build/FlashRuby-generated-files.hmap -I/Users/kibiyama/git/flashruby/FlashRubyOSX/obj/Release/FlashRuby.build/FlashRuby-own-target-headers.hmap -I/Users/kibiyama/git/flashruby/FlashRubyOSX/obj/Release/FlashRuby.build/FlashRuby-all-target-headers.hmap -iquote /Users/kibiyama/git/flashruby/FlashRubyOSX/obj/Release/FlashRuby.build/FlashRuby-project-headers.hmap -I/Users/kibiyama/git/flashruby/FlashRubyOSX/bin/Release/include -I../AdobeAIRSDK/include -I../rubinius/vm -I../rubinius -I../rubinius/vendor/libtommath -I../rubinius/vm/capi/19/include -I/Users/kibiyama/git/flashruby/FlashRubyOSX/obj/Release/FlashRuby.build/DerivedSources/i386 -I/Users/kibiyama/git/flashruby/FlashRubyOSX/obj/Release/FlashRuby.build/DerivedSources -F/Users/kibiyama/git/flashruby/FlashRubyOSX/bin/Release -F/Users/kibiyama/git/flashruby/FlashRubyOSX/../AdobeAIRSDK/runtimes/air/mac -MMD -MT dependencies -MF /Users/kibiyama/git/flashruby/FlashRubyOSX/obj/Release/FlashRuby.build/Objects-normal/i386/FlashRuby.d --serialize-diagnostics /Users/kibiyama/git/flashruby/FlashRubyOSX/obj/Release/FlashRuby.build/Objects-normal/i386/FlashRuby.dia -c /Users/kibiyama/git/flashruby/FlashRubyOSX/FlashRuby/FlashRuby.cpp -o /Users/kibiyama/git/flashruby/FlashRubyOSX/obj/Release/FlashRuby.build/Objects-normal/i386/FlashRuby.o36"9F14BEBD-C9DB-4649-8EA4-EEE52544C8B8-
 
+CCompileC obj/release/FlashRuby.build/Objects-normal/i386/FlashRuby.o /Users/kibiyama/git/flashruby/FlashRubyOSX/FlashRuby/FlashRuby.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler
+s366233641.205576
+e366233641.630902
+r1
+xCompileC
+xobj/release/FlashRuby.build/Objects-normal/i386/FlashRuby.o
+x/Users/kibiyama/git/flashruby/FlashRubyOSX/FlashRuby/FlashRuby.cpp
+xnormal
+xi386
+xc++
+xcom.apple.compilers.llvm.clang.1_0.compiler
+oIn file included from /Users/kibiyama/git/flashruby/FlashRubyOSX/FlashRuby/FlashRuby.cpp:6:
+oIn file included from ../rubinius/vm/environment.hpp:7:
+oIn file included from ../rubinius/vm/vm.hpp:6:
+oIn file included from ../rubinius/vm/globals.hpp:28:
+oIn file included from ../rubinius/vm/gc/root.hpp:8:
+o../rubinius/vm/oop.hpp:40:9: warning: 'TAG_REF_MASK' macro redefined
+o#define TAG_REF_MASK     3
+o        ^
+o../rubinius/vm/capi/19/include/ruby/mri_oop.h:81:9: note: previous definition is here
+o#define TAG_REF_MASK        0x3
+o        ^
+oIn file included from /Users/kibiyama/git/flashruby/FlashRubyOSX/FlashRuby/FlashRuby.cpp:6:
+oIn file included from ../rubinius/vm/environment.hpp:7:
+oIn file included from ../rubinius/vm/vm.hpp:6:
+oIn file included from ../rubinius/vm/globals.hpp:28:
+oIn file included from ../rubinius/vm/gc/root.hpp:8:
+o../rubinius/vm/oop.hpp:44:9: warning: 'TAG_FIXNUM_SHIFT' macro redefined
+o#define TAG_FIXNUM_SHIFT 1
+o        ^
+o../rubinius/vm/capi/19/include/ruby/mri_oop.h:88:9: note: previous definition is here
+o#define TAG_FIXNUM_SHIFT    0x1
+o        ^
+oIn file included from /Users/kibiyama/git/flashruby/FlashRubyOSX/FlashRuby/FlashRuby.cpp:6:
+oIn file included from ../rubinius/vm/environment.hpp:7:
+oIn file included from ../rubinius/vm/vm.hpp:6:
+oIn file included from ../rubinius/vm/globals.hpp:28:
+oIn file included from ../rubinius/vm/gc/root.hpp:8:
+o../rubinius/vm/oop.hpp:45:9: warning: 'TAG_FIXNUM_MASK' macro redefined
+o#define TAG_FIXNUM_MASK  1
+o        ^
+o../rubinius/vm/capi/19/include/ruby/mri_oop.h:89:9: note: previous definition is here
+o#define TAG_FIXNUM_MASK     0x1
+o        ^
+oIn file included from /Users/kibiyama/git/flashruby/FlashRubyOSX/FlashRuby/FlashRuby.cpp:6:
+oIn file included from ../rubinius/vm/environment.hpp:7:
+oIn file included from ../rubinius/vm/vm.hpp:6:
+oIn file included from ../rubinius/vm/globals.hpp:28:
+oIn file included from ../rubinius/vm/gc/root.hpp:8:
+o../rubinius/vm/oop.hpp:51:9: warning: 'TAG_SYMBOL_MASK' macro redefined
+o#define TAG_SYMBOL_MASK  7
+o        ^
+o../rubinius/vm/capi/19/include/ruby/mri_oop.h:95:9: note: previous definition is here
+o#define TAG_SYMBOL_MASK     0x7
+o        ^
+o/Users/kibiyama/git/flashruby/FlashRubyOSX/FlashRuby/FlashRuby.cpp:69:20: warning: conversion from string literal to 'char *' is deprecated [-Wdeprecated-writable-strings]
+o  char* argv[] = { "/Users/kibiyama/git/flashruby/rubinius/bin/rbx" };
+o                   ^
+o5 warnings generated.
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection74"Compile /Users/kibiyama/git/flashruby/FlashRubyOSX/FlashRuby/FlashRuby.cppa2b3342948d4b541^1d03a62948d4b541^-2432"In file included from /Users/kibiyama/git/flashruby/FlashRubyOSX/FlashRuby/FlashRuby.cpp:6:In file included from ../rubinius/vm/environment.hpp:7:In file included from ../rubinius/vm/vm.hpp:6:In file included from ../rubinius/vm/globals.hpp:28:In file included from ../rubinius/vm/gc/root.hpp:8:../rubinius/vm/oop.hpp:40:9: warning: 'TAG_REF_MASK' macro redefined#define TAG_REF_MASK     3        ^../rubinius/vm/capi/19/include/ruby/mri_oop.h:81:9: note: previous definition is here#define TAG_REF_MASK        0x3        ^In file included from /Users/kibiyama/git/flashruby/FlashRubyOSX/FlashRuby/FlashRuby.cpp:6:In file included from ../rubinius/vm/environment.hpp:7:In file included from ../rubinius/vm/vm.hpp:6:In file included from ../rubinius/vm/globals.hpp:28:In file included from ../rubinius/vm/gc/root.hpp:8:../rubinius/vm/oop.hpp:44:9: warning: 'TAG_FIXNUM_SHIFT' macro redefined#define TAG_FIXNUM_SHIFT 1        ^../rubinius/vm/capi/19/include/ruby/mri_oop.h:88:9: note: previous definition is here#define TAG_FIXNUM_SHIFT    0x1        ^In file included from /Users/kibiyama/git/flashruby/FlashRubyOSX/FlashRuby/FlashRuby.cpp:6:In file included from ../rubinius/vm/environment.hpp:7:In file included from ../rubinius/vm/vm.hpp:6:In file included from ../rubinius/vm/globals.hpp:28:In file included from ../rubinius/vm/gc/root.hpp:8:../rubinius/vm/oop.hpp:45:9: warning: 'TAG_FIXNUM_MASK' macro redefined#define TAG_FIXNUM_MASK  1        ^../rubinius/vm/capi/19/include/ruby/mri_oop.h:89:9: note: previous definition is here#define TAG_FIXNUM_MASK     0x1        ^In file included from /Users/kibiyama/git/flashruby/FlashRubyOSX/FlashRuby/FlashRuby.cpp:6:In file included from ../rubinius/vm/environment.hpp:7:In file included from ../rubinius/vm/vm.hpp:6:In file included from ../rubinius/vm/globals.hpp:28:In file included from ../rubinius/vm/gc/root.hpp:8:../rubinius/vm/oop.hpp:51:9: warning: 'TAG_SYMBOL_MASK' macro redefined#define TAG_SYMBOL_MASK  7        ^../rubinius/vm/capi/19/include/ruby/mri_oop.h:95:9: note: previous definition is here#define TAG_SYMBOL_MASK     0x7        ^/Users/kibiyama/git/flashruby/FlashRubyOSX/FlashRuby/FlashRuby.cpp:69:20: warning: conversion from string literal to 'char *' is deprecated [-Wdeprecated-writable-strings]  char* argv[] = { "/Users/kibiyama/git/flashruby/rubinius/bin/rbx" };                   ^5 warnings generated.5(36%IDEClangDiagnosticActivityLogMessage2@30"'TAG_REF_MASK' macro redefined-366233641#18446744073709551615#0#6(2@91"In file included from /Users/kibiyama/git/flashruby/FlashRubyOSX/FlashRuby/FlashRuby.cpp:6:-366233641#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic23%DVTTextDocumentLocation3@82"file://localhost/Users/kibiyama/git/flashruby/FlashRubyOSX/FlashRuby/FlashRuby.cpp0000000000000000^5#9#5#9#108#0#21"Clang LLVM 1.0 Notice--2@55"In file included from ../rubinius/vm/environment.hpp:7:-366233641#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@73"file://localhost/Users/kibiyama/git/flashruby/rubinius/vm/environment.hpp0000000000000000^6#9#6#9#106#0#21"Clang LLVM 1.0 Notice--2@46"In file included from ../rubinius/vm/vm.hpp:6:-366233641#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@64"file://localhost/Users/kibiyama/git/flashruby/rubinius/vm/vm.hpp0000000000000000^5#9#5#9#71#0#21"Clang LLVM 1.0 Notice--2@52"In file included from ../rubinius/vm/globals.hpp:28:-366233641#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@69"file://localhost/Users/kibiyama/git/flashruby/rubinius/vm/globals.hpp0000000000000000^27#9#27#9#908#0#21"Clang LLVM 1.0 Notice--2@51"In file included from ../rubinius/vm/gc/root.hpp:8:-366233641#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@69"file://localhost/Users/kibiyama/git/flashruby/rubinius/vm/gc/root.hpp0000000000000000^7#9#7#9#107#0#21"Clang LLVM 1.0 Notice--2@27"Previous definition is here-366233641#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@88"file://localhost/Users/kibiyama/git/flashruby/rubinius/vm/capi/19/include/ruby/mri_oop.h0000000000000000^80#8#80#8#2372#0#21"Clang LLVM 1.0 Notice--1#27"com.apple.dt.IDE.diagnostic3@65"file://localhost/Users/kibiyama/git/flashruby/rubinius/vm/oop.hpp0000000000000000^39#8#39#8#807#0#29"Lexical or Preprocessor Issue--2@34"'TAG_FIXNUM_SHIFT' macro redefined-366233641#18446744073709551615#0#6(2@91"In file included from /Users/kibiyama/git/flashruby/FlashRubyOSX/FlashRuby/FlashRuby.cpp:6:-366233641#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@82"file://localhost/Users/kibiyama/git/flashruby/FlashRubyOSX/FlashRuby/FlashRuby.cpp0000000000000000^5#9#5#9#108#0#21"Clang LLVM 1.0 Notice--2@55"In file included from ../rubinius/vm/environment.hpp:7:-366233641#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@73"file://localhost/Users/kibiyama/git/flashruby/rubinius/vm/environment.hpp0000000000000000^6#9#6#9#106#0#21"Clang LLVM 1.0 Notice--2@46"In file included from ../rubinius/vm/vm.hpp:6:-366233641#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@64"file://localhost/Users/kibiyama/git/flashruby/rubinius/vm/vm.hpp0000000000000000^5#9#5#9#71#0#21"Clang LLVM 1.0 Notice--2@52"In file included from ../rubinius/vm/globals.hpp:28:-366233641#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@69"file://localhost/Users/kibiyama/git/flashruby/rubinius/vm/globals.hpp0000000000000000^27#9#27#9#908#0#21"Clang LLVM 1.0 Notice--2@51"In file included from ../rubinius/vm/gc/root.hpp:8:-366233641#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@69"file://localhost/Users/kibiyama/git/flashruby/rubinius/vm/gc/root.hpp0000000000000000^7#9#7#9#107#0#21"Clang LLVM 1.0 Notice--2@27"Previous definition is here-366233641#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@88"file://localhost/Users/kibiyama/git/flashruby/rubinius/vm/capi/19/include/ruby/mri_oop.h0000000000000000^87#8#87#8#2503#0#21"Clang LLVM 1.0 Notice--1#27"com.apple.dt.IDE.diagnostic3@65"file://localhost/Users/kibiyama/git/flashruby/rubinius/vm/oop.hpp0000000000000000^43#8#43#8#891#0#29"Lexical or Preprocessor Issue--2@33"'TAG_FIXNUM_MASK' macro redefined-366233641#18446744073709551615#0#6(2@91"In file included from /Users/kibiyama/git/flashruby/FlashRubyOSX/FlashRuby/FlashRuby.cpp:6:-366233641#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@82"file://localhost/Users/kibiyama/git/flashruby/FlashRubyOSX/FlashRuby/FlashRuby.cpp0000000000000000^5#9#5#9#108#0#21"Clang LLVM 1.0 Notice--2@55"In file included from ../rubinius/vm/environment.hpp:7:-366233641#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@73"file://localhost/Users/kibiyama/git/flashruby/rubinius/vm/environment.hpp0000000000000000^6#9#6#9#106#0#21"Clang LLVM 1.0 Notice--2@46"In file included from ../rubinius/vm/vm.hpp:6:-366233641#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@64"file://localhost/Users/kibiyama/git/flashruby/rubinius/vm/vm.hpp0000000000000000^5#9#5#9#71#0#21"Clang LLVM 1.0 Notice--2@52"In file included from ../rubinius/vm/globals.hpp:28:-366233641#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@69"file://localhost/Users/kibiyama/git/flashruby/rubinius/vm/globals.hpp0000000000000000^27#9#27#9#908#0#21"Clang LLVM 1.0 Notice--2@51"In file included from ../rubinius/vm/gc/root.hpp:8:-366233641#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@69"file://localhost/Users/kibiyama/git/flashruby/rubinius/vm/gc/root.hpp0000000000000000^7#9#7#9#107#0#21"Clang LLVM 1.0 Notice--2@27"Previous definition is here-366233641#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@88"file://localhost/Users/kibiyama/git/flashruby/rubinius/vm/capi/19/include/ruby/mri_oop.h0000000000000000^88#8#88#8#2535#0#21"Clang LLVM 1.0 Notice--1#27"com.apple.dt.IDE.diagnostic3@65"file://localhost/Users/kibiyama/git/flashruby/rubinius/vm/oop.hpp0000000000000000^44#8#44#8#918#0#29"Lexical or Preprocessor Issue--2@33"'TAG_SYMBOL_MASK' macro redefined-366233641#18446744073709551615#0#6(2@91"In file included from /Users/kibiyama/git/flashruby/FlashRubyOSX/FlashRuby/FlashRuby.cpp:6:-366233641#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@82"file://localhost/Users/kibiyama/git/flashruby/FlashRubyOSX/FlashRuby/FlashRuby.cpp0000000000000000^5#9#5#9#108#0#21"Clang LLVM 1.0 Notice--2@55"In file included from ../rubinius/vm/environment.hpp:7:-366233641#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@73"file://localhost/Users/kibiyama/git/flashruby/rubinius/vm/environment.hpp0000000000000000^6#9#6#9#106#0#21"Clang LLVM 1.0 Notice--2@46"In file included from ../rubinius/vm/vm.hpp:6:-366233641#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@64"file://localhost/Users/kibiyama/git/flashruby/rubinius/vm/vm.hpp0000000000000000^5#9#5#9#71#0#21"Clang LLVM 1.0 Notice--2@52"In file included from ../rubinius/vm/globals.hpp:28:-366233641#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@69"file://localhost/Users/kibiyama/git/flashruby/rubinius/vm/globals.hpp0000000000000000^27#9#27#9#908#0#21"Clang LLVM 1.0 Notice--2@51"In file included from ../rubinius/vm/gc/root.hpp:8:-366233641#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@69"file://localhost/Users/kibiyama/git/flashruby/rubinius/vm/gc/root.hpp0000000000000000^7#9#7#9#107#0#21"Clang LLVM 1.0 Notice--2@27"Previous definition is here-366233641#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic3@88"file://localhost/Users/kibiyama/git/flashruby/rubinius/vm/capi/19/include/ruby/mri_oop.h0000000000000000^94#8#94#8#2642#0#21"Clang LLVM 1.0 Notice--1#27"com.apple.dt.IDE.diagnostic3@65"file://localhost/Users/kibiyama/git/flashruby/rubinius/vm/oop.hpp0000000000000000^50#8#50#8#1032#0#29"Lexical or Preprocessor Issue--2@56"Conversion from string literal to 'char *' is deprecated-366233641#18446744073709551615#0#-1#27"com.apple.dt.IDE.diagnostic3@82"file://localhost/Users/kibiyama/git/flashruby/FlashRubyOSX/FlashRuby/FlashRuby.cpp0000000000000000^68#19#68#19#2256#0#14"Semantic Issue--0#0#0#-19%DVTDocumentLocation4@82"file://localhost/Users/kibiyama/git/flashruby/FlashRubyOSX/FlashRuby/FlashRuby.cpp0000000000000000^2476"CompileC obj/release/FlashRuby.build/Objects-normal/i386/FlashRuby.o FlashRuby/FlashRuby.cpp normal i386 c++ com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/kibiyama/git/flashruby/FlashRubyOSX    setenv LANG en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch i386 -fmessage-length=0 -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wmissing-prototypes -Wreturn-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-sign-compare -Wshorten-64-to-32 -Wno-newline-eof -Wc++11-extensions -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.7.sdk -fasm-blocks -Wdeprecated-declarations -Winvalid-offsetof -mmacosx-version-min=10.7 -g -fvisibility-inlines-hidden -Wno-conversion -Wno-sign-conversion -iquote /Users/kibiyama/git/flashruby/FlashRubyOSX/obj/release/FlashRuby.build/FlashRuby-generated-files.hmap -I/Users/kibiyama/git/flashruby/FlashRubyOSX/obj/release/FlashRuby.build/FlashRuby-own-target-headers.hmap -I/Users/kibiyama/git/flashruby/FlashRubyOSX/obj/release/FlashRuby.build/FlashRuby-all-target-headers.hmap -iquote /Users/kibiyama/git/flashruby/FlashRubyOSX/obj/release/FlashRuby.build/FlashRuby-project-headers.hmap -I/Users/kibiyama/git/flashruby/FlashRubyOSX/../lib/release/include -I../AdobeAIRSDK/include -I../rubinius/vm -I../rubinius -I../rubinius/vendor/libtommath -I../rubinius/vm/capi/19/include -I/Users/kibiyama/git/flashruby/FlashRubyOSX/obj/release/FlashRuby.build/DerivedSources/i386 -I/Users/kibiyama/git/flashruby/FlashRubyOSX/obj/release/FlashRuby.build/DerivedSources -F/Users/kibiyama/git/flashruby/FlashRubyOSX/../lib/release -F/Users/kibiyama/git/flashruby/FlashRubyOSX/../AdobeAIRSDK/runtimes/air/mac -MMD -MT dependencies -MF /Users/kibiyama/git/flashruby/FlashRubyOSX/obj/release/FlashRuby.build/Objects-normal/i386/FlashRuby.d --serialize-diagnostics /Users/kibiyama/git/flashruby/FlashRubyOSX/obj/release/FlashRuby.build/Objects-normal/i386/FlashRuby.dia -c /Users/kibiyama/git/flashruby/FlashRubyOSX/FlashRuby/FlashRuby.cpp -o /Users/kibiyama/git/flashruby/FlashRubyOSX/obj/release/FlashRuby.build/Objects-normal/i386/FlashRuby.o36"9E409574-92BC-4B53-9753-634B5A86E86F-
+
+CCopyStringsFile /Users/kibiyama/git/flashruby/FlashRubyOSX/../lib/release/FlashRuby.framework/Versions/A/Resources/en.lproj/InfoPlist.strings FlashRuby/en.lproj/InfoPlist.strings
+s366230871.772115
+e366230871.777252
+r1
+xCopyStringsFile
+x/Users/kibiyama/git/flashruby/FlashRubyOSX/../lib/release/FlashRuby.framework/Versions/A/Resources/en.lproj/InfoPlist.strings
+xFlashRuby/en.lproj/InfoPlist.strings
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection41"Copy FlashRuby/en.lproj/InfoPlist.strings29b3c5573dd4b541^1efac6573dd4b541^---0#0#0#-19%DVTDocumentLocation2@95"file://localhost/Users/kibiyama/git/flashruby/FlashRubyOSX/FlashRuby/en.lproj/InfoPlist.strings0000000000000000^424"CopyStringsFile ../lib/release/FlashRuby.framework/Versions/A/Resources/en.lproj/InfoPlist.strings FlashRuby/en.lproj/InfoPlist.strings    cd /Users/kibiyama/git/flashruby/FlashRubyOSX    builtin-copyStrings --validate --inputencoding utf-8 --outputencoding UTF-16 --outdir /Users/kibiyama/git/flashruby/FlashRubyOSX/../lib/release/FlashRuby.framework/Versions/A/Resources/en.lproj -- FlashRuby/en.lproj/InfoPlist.strings36"F8BF07AB-3052-472C-9B92-F0A0A986DF3D-
+
 CCopyStringsFile /Users/kibiyama/git/flashruby/FlashRubyOSX/bin/Release/FlashRuby.framework/Versions/A/Resources/en.lproj/InfoPlist.strings FlashRuby/en.lproj/InfoPlist.strings
 s366100204.874070
 e366100204.876889
@@ -183,6 +663,16 @@ xCopyStringsFile
 x/Users/kibiyama/git/flashruby/FlashRubyOSX/bin/Release/FlashRuby.framework/Versions/A/Resources/en.lproj/InfoPlist.strings
 xFlashRuby/en.lproj/InfoPlist.strings
 lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection41"Copy FlashRuby/en.lproj/InfoPlist.strings67d5dfec3ed2b541^317ce0ec3ed2b541^---0#0#0#-19%DVTDocumentLocation2@95"file://localhost/Users/kibiyama/git/flashruby/FlashRubyOSX/FlashRuby/en.lproj/InfoPlist.strings0000000000000000^418"CopyStringsFile bin/Release/FlashRuby.framework/Versions/A/Resources/en.lproj/InfoPlist.strings FlashRuby/en.lproj/InfoPlist.strings    cd /Users/kibiyama/git/flashruby/FlashRubyOSX    builtin-copyStrings --validate --inputencoding utf-8 --outputencoding UTF-16 --outdir /Users/kibiyama/git/flashruby/FlashRubyOSX/bin/Release/FlashRuby.framework/Versions/A/Resources/en.lproj -- FlashRuby/en.lproj/InfoPlist.strings36"023111BC-867B-4C65-8049-54CA926A9972-
+
+CLd /Users/kibiyama/git/flashruby/FlashRubyOSX/../lib/release/FlashRuby.framework/Versions/A/FlashRuby normal i386
+s366233641.637293
+e366233641.683358
+r1
+xLd
+x/Users/kibiyama/git/flashruby/FlashRubyOSX/../lib/release/FlashRuby.framework/Versions/A/FlashRuby
+xnormal
+xi386
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection103"Link /Users/kibiyama/git/flashruby/FlashRubyOSX/../lib/release/FlashRuby.framework/Versions/A/FlashRubyca33a32948d4b541^7cf0ae2948d4b541^---0#0#0#--1330"Ld ../lib/release/FlashRuby.framework/Versions/A/FlashRuby normal i386    cd /Users/kibiyama/git/flashruby/FlashRubyOSX    setenv MACOSX_DEPLOYMENT_TARGET 10.7    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ -arch i386 -dynamiclib -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.7.sdk -L/Users/kibiyama/git/flashruby/FlashRubyOSX/../lib/release -L/Users/kibiyama/git/flashruby/FlashRubyOSX/../rubinius/vm -L/Users/kibiyama/git/flashruby/FlashRubyOSX/../rubinius/bin -F/Users/kibiyama/git/flashruby/FlashRubyOSX/../lib/release -F/Users/kibiyama/git/flashruby/FlashRubyOSX/../AdobeAIRSDK/runtimes/air/mac -filelist /Users/kibiyama/git/flashruby/FlashRubyOSX/obj/release/FlashRuby.build/Objects-normal/i386/FlashRuby.LinkFileList -install_name /Users/kibiyama/Library/Frameworks/FlashRuby.framework/Versions/A/FlashRuby -Xlinker -rpath -Xlinker "@executable_path/../runtimes/air/mac" -Xlinker -rpath -Xlinker "@executable_path/../Frameworks" -Xlinker -rpath -Xlinker /Library/Frameworks -mmacosx-version-min=10.7 -lrubinius -framework "Adobe AIR" -framework Cocoa -single_module -compatibility_version 1 -current_version 1 -o /Users/kibiyama/git/flashruby/FlashRubyOSX/../lib/release/FlashRuby.framework/Versions/A/FlashRuby36"7A8F57E8-1922-479C-96B3-C0D46351F8D6-
 
 CLd /Users/kibiyama/git/flashruby/FlashRubyOSX/bin/Release/FlashRuby.framework/Versions/A/FlashRuby normal i386
 s366100204.821639
@@ -194,6 +684,15 @@ xnormal
 xi386
 lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection100"Link /Users/kibiyama/git/flashruby/FlashRubyOSX/bin/Release/FlashRuby.framework/Versions/A/FlashRuby166dd2ec3ed2b541^9cc3ddec3ed2b541^---0#0#0#--1257"Ld bin/Release/FlashRuby.framework/Versions/A/FlashRuby normal i386    cd /Users/kibiyama/git/flashruby/FlashRubyOSX    setenv MACOSX_DEPLOYMENT_TARGET 10.7    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ -arch i386 -dynamiclib -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.7.sdk -L/Users/kibiyama/git/flashruby/FlashRubyOSX/bin/Release -L/Users/kibiyama/git/flashruby/FlashRubyOSX/../rubinius/vm -F/Users/kibiyama/git/flashruby/FlashRubyOSX/bin/Release -F/Users/kibiyama/git/flashruby/FlashRubyOSX/../AdobeAIRSDK/runtimes/air/mac -filelist /Users/kibiyama/git/flashruby/FlashRubyOSX/obj/Release/FlashRuby.build/Objects-normal/i386/FlashRuby.LinkFileList -install_name /Users/kibiyama/Library/Frameworks/FlashRuby.framework/Versions/A/FlashRuby -Xlinker -rpath -Xlinker "@executable_path/../runtimes/air/mac" -Xlinker -rpath -Xlinker "@executable_path/../Frameworks" -Xlinker -rpath -Xlinker /Library/Frameworks -mmacosx-version-min=10.7 -lrubinius -framework "Adobe AIR" -framework Cocoa -single_module -compatibility_version 1 -current_version 1 -o /Users/kibiyama/git/flashruby/FlashRubyOSX/bin/Release/FlashRuby.framework/Versions/A/FlashRuby36"604AA4EB-8CF7-4C05-AA30-9F8502479463-
 
+CProcessInfoPlistFile /Users/kibiyama/git/flashruby/FlashRubyOSX/../lib/release/FlashRuby.framework/Versions/A/Resources/Info.plist FlashRuby/FlashRuby-Info.plist
+s366230871.697186
+e366230871.702867
+r1
+xProcessInfoPlistFile
+x/Users/kibiyama/git/flashruby/FlashRubyOSX/../lib/release/FlashRuby.framework/Versions/A/Resources/Info.plist
+xFlashRuby/FlashRuby-Info.plist
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection38"Process FlashRuby/FlashRuby-Info.plista586b2573dd4b541^5befb3573dd4b541^---0#0#0#-19%DVTDocumentLocation2@89"file://localhost/Users/kibiyama/git/flashruby/FlashRubyOSX/FlashRuby/FlashRuby-Info.plist0000000000000000^380"ProcessInfoPlistFile ../lib/release/FlashRuby.framework/Versions/A/Resources/Info.plist FlashRuby/FlashRuby-Info.plist    cd /Users/kibiyama/git/flashruby/FlashRubyOSX    builtin-infoPlistUtility FlashRuby/FlashRuby-Info.plist -expandbuildsettings -platform macosx -o /Users/kibiyama/git/flashruby/FlashRubyOSX/../lib/release/FlashRuby.framework/Versions/A/Resources/Info.plist36"4B5B6864-36F3-47A8-9388-2A366B974F3A-
+
 CProcessInfoPlistFile /Users/kibiyama/git/flashruby/FlashRubyOSX/bin/Release/FlashRuby.framework/Versions/A/Resources/Info.plist FlashRuby/FlashRuby-Info.plist
 s366100204.377963
 e366100204.381228
@@ -202,6 +701,33 @@ xProcessInfoPlistFile
 x/Users/kibiyama/git/flashruby/FlashRubyOSX/bin/Release/FlashRuby.framework/Versions/A/Resources/Info.plist
 xFlashRuby/FlashRuby-Info.plist
 lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection38"Process FlashRuby/FlashRuby-Info.plist99d860ec3ed2b541^4a9861ec3ed2b541^---0#0#0#-19%DVTDocumentLocation2@89"file://localhost/Users/kibiyama/git/flashruby/FlashRubyOSX/FlashRuby/FlashRuby-Info.plist0000000000000000^374"ProcessInfoPlistFile bin/Release/FlashRuby.framework/Versions/A/Resources/Info.plist FlashRuby/FlashRuby-Info.plist    cd /Users/kibiyama/git/flashruby/FlashRubyOSX    builtin-infoPlistUtility FlashRuby/FlashRuby-Info.plist -expandbuildsettings -platform macosx -o /Users/kibiyama/git/flashruby/FlashRubyOSX/bin/Release/FlashRuby.framework/Versions/A/Resources/Info.plist36"D8F2AA29-E207-4ED8-BA8A-E31A20F644FA-
+
+CSymLink /Users/kibiyama/git/flashruby/FlashRubyOSX/../lib/release/FlashRuby.framework/FlashRuby Versions/Current/FlashRuby
+s366233617.893019
+e366233617.896965
+r1
+xSymLink
+x/Users/kibiyama/git/flashruby/FlashRubyOSX/../lib/release/FlashRuby.framework/FlashRuby
+xVersions/Current/FlashRuby
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection95"Process /Users/kibiyama/git/flashruby/FlashRubyOSX/../lib/release/FlashRuby.framework/FlashRuby65a6e41148d4b541^fd69e71148d4b541^---0#0#0#--261"SymLink ../lib/release/FlashRuby.framework/FlashRuby Versions/Current/FlashRuby    cd /Users/kibiyama/git/flashruby/FlashRubyOSX    /bin/ln -sf Versions/Current/FlashRuby /Users/kibiyama/git/flashruby/FlashRubyOSX/../lib/release/FlashRuby.framework/FlashRuby36"29576264-E060-4950-8FC5-143439966B10-
+
+CSymLink /Users/kibiyama/git/flashruby/FlashRubyOSX/../lib/release/FlashRuby.framework/Resources Versions/Current/Resources
+s366230871.681369
+e366230871.685486
+r1
+xSymLink
+x/Users/kibiyama/git/flashruby/FlashRubyOSX/../lib/release/FlashRuby.framework/Resources
+xVersions/Current/Resources
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection95"Process /Users/kibiyama/git/flashruby/FlashRubyOSX/../lib/release/FlashRuby.framework/Resources3276ae573dd4b541^af7baf573dd4b541^---0#0#0#--261"SymLink ../lib/release/FlashRuby.framework/Resources Versions/Current/Resources    cd /Users/kibiyama/git/flashruby/FlashRubyOSX    /bin/ln -sf Versions/Current/Resources /Users/kibiyama/git/flashruby/FlashRubyOSX/../lib/release/FlashRuby.framework/Resources36"1644036E-E4CA-4CA8-ADD8-41ABE77C5C81-
+
+CSymLink /Users/kibiyama/git/flashruby/FlashRubyOSX/../lib/release/FlashRuby.framework/Versions/Current A
+s366230871.681365
+e366230871.686420
+r1
+xSymLink
+x/Users/kibiyama/git/flashruby/FlashRubyOSX/../lib/release/FlashRuby.framework/Versions/Current
+xA
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection102"Process /Users/kibiyama/git/flashruby/FlashRubyOSX/../lib/release/FlashRuby.framework/Versions/Current1076ae573dd4b541^7cb9af573dd4b541^---0#0#0#--225"SymLink ../lib/release/FlashRuby.framework/Versions/Current A    cd /Users/kibiyama/git/flashruby/FlashRubyOSX    /bin/ln -sf A /Users/kibiyama/git/flashruby/FlashRubyOSX/../lib/release/FlashRuby.framework/Versions/Current36"A6DD7CF0-6CD6-454F-BD2E-F9F95773709B-
 
 CSymLink /Users/kibiyama/git/flashruby/FlashRubyOSX/bin/Release/FlashRuby.framework/FlashRuby Versions/Current/FlashRuby
 s366100204.364053
@@ -229,6 +755,14 @@ xSymLink
 x/Users/kibiyama/git/flashruby/FlashRubyOSX/bin/Release/FlashRuby.framework/Versions/Current
 xA
 lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection99"Process /Users/kibiyama/git/flashruby/FlashRubyOSX/bin/Release/FlashRuby.framework/Versions/Currentd0625dec3ed2b541^30bc5eec3ed2b541^---0#0#0#--219"SymLink bin/Release/FlashRuby.framework/Versions/Current A    cd /Users/kibiyama/git/flashruby/FlashRubyOSX    /bin/ln -sf A /Users/kibiyama/git/flashruby/FlashRubyOSX/bin/Release/FlashRuby.framework/Versions/Current36"8826E64A-C680-4E29-A449-A1AB57295AD5-
+
+CTouch /Users/kibiyama/git/flashruby/FlashRubyOSX/../lib/release/FlashRuby.framework
+s366233641.699130
+e366233641.703087
+r1
+xTouch
+x/Users/kibiyama/git/flashruby/FlashRubyOSX/../lib/release/FlashRuby.framework
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection83"Touch /Users/kibiyama/git/flashruby/FlashRubyOSX/../lib/release/FlashRuby.framework5c03b32948d4b541^b5fdb32948d4b541^---0#0#0#--191"Touch ../lib/release/FlashRuby.framework    cd /Users/kibiyama/git/flashruby/FlashRubyOSX    /usr/bin/touch -c /Users/kibiyama/git/flashruby/FlashRubyOSX/../lib/release/FlashRuby.framework36"262A0566-3D2E-4A3F-B76B-382F5B6F437D-
 
 CTouch /Users/kibiyama/git/flashruby/FlashRubyOSX/bin/Release/FlashRuby.framework
 s366100204.884691

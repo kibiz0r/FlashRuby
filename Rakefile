@@ -6,20 +6,32 @@ host = 'i386-apple-darwin11.3'
 configuration = 'debug'
 
 flex4zip = 'flex4.zip'
-flex4 = 'flex4'
-
+air3incomplete = 'air3incomplete'
 air3tbz2 = 'air3.tbz2'
+
 air3 = 'air3'
+air3runtime = "#{air3}/runtimes/air/mac"
 air3framework = "#{air3}/runtimes/air/mac/Adobe AIR.framework"
 
+adl = "#{air3}/bin/adl"
 adt = "#{air3}/bin/adt"
 mxmlc = "#{air3}/bin/mxmlc"
+compc = "#{air3}/bin/compc"
 
-ane = "lib/#{configuration}/FlashRuby.ane"
-extension_xml = 'FlashRuby/xml/extension.xml'
-swc = "FlashRuby/bin-#{configuration}/FlashRuby.swc"
+extdir = "lib/#{configuration}"
+ane = "#{extdir}/FlashRuby.ane"
+
+unpacked_extdir = "#{extdir}/unpacked"
+ane_dir = "#{unpacked_extdir}/FlashRuby.ane"
 
 native = 'FlashRubyOSX'
+native_source = FileList["#{native}/FlashRuby/**/*"].to_a
+
+flashruby = 'FlashRuby'
+flashruby_source = FileList["#{flashruby}/src/**/*.as"].to_a
+flashruby_xml = "#{flashruby}/xml/extension.xml"
+flashruby_swc = "#{flashruby}/bin/#{configuration}/FlashRuby.swc"
+
 framework_name = 'FlashRuby.framework'
 framework = "lib/#{configuration}/#{framework_name}"
 framework_binary = "#{framework}/FlashRuby"
@@ -28,31 +40,27 @@ rubinius = 'rubinius'
 rubinius_config = "#{rubinius}/config.rb"
 librubinius = "#{rubinius}/bin/librubinius.dylib"
 
-bin = 'bin'
-fruby = "#{bin}/#{configuration}/fruby.swf"
-firb = "#{bin}/#{configuration}/firb.swf"
-firb_src = 'firb/src'
+fruby = "fruby/bin/#{configuration}/fruby.swf"
+
+firb_bin = "firb/bin/#{configuration}"
+firb = "#{firb_bin}/firb.swf"
+firb_app = "#{firb_bin}/firb-app.xml"
+firb_config = 'firb/src/firb-app.config'
+firb_source = FileList["firb/src/**/*.as"].to_a
+firb_main = "firb/src/firb.as"
 
 
 
 
-file flex4zip do
+file air3framework do
   sh "wget http://download.macromedia.com/pub/flex/sdk/flex_sdk_4.6.zip -O #{flex4zip}"
-end
-
-file flex4 => flex4zip do
-  sh "unzip #{flex4zip} -d #{flex4}"
-end
-
-file air3tbz2 do
+  sh "unzip #{flex4zip} -d #{air3incomplete}"
   sh "wget http://airdownload.adobe.com/air/mac/download/latest/AdobeAIRSDK.tbz2 -O #{air3tbz2}"
-end
-
-file air3framework => [flex4, air3tbz2] do
-  mv flex4, air3, force: true
-  cd air3 do
+  cd air3incomplete do
     sh "tar -jxvf ../#{air3tbz2}"
   end
+  mv air3incomplete, air3, force: true
+  rm flex4zip, air3tbz2
 end
 
 file adt => air3framework
@@ -78,7 +86,7 @@ file librubinius => rubinius_config do
     cd 'vendor/udis86' do
       sh 'CFLAGS="-m32" CPPFLAGS="-m32" LDFLAGS="-m32" ./configure'
     end
-    sh 'rake lib:shared'
+    sh 'rake lib:shared --trace'
   end
 end
 
@@ -88,27 +96,41 @@ file framework_binary => librubinius do
   end
 end
 
-file ane => [adt, framework] do
+file flashruby_swc => compc do
+  sh "#{compc} +configname=air -load-config+=#{flashruby_config} -debug=#{configuration == 'debug'} -output #{flashruby_swc}"
+end
+
+file ane => [*flashruby_source, adt, framework_binary] do
   Dir.mktmpdir do |tmpdir|
-    sh "unzip -uo #{swc} library.swf -d #{tmpdir}"
+    sh "unzip -uo #{flashruby_swc} library.swf -d #{tmpdir}"
     cp_r framework, "#{tmpdir}/."
     old_path = Dir.pwd
     cd tmpdir do
-      sh "#{File.join old_path, adt} -package -target ane #{File.join old_path, ane} #{File.join old_path, extension_xml} -swc #{File.join old_path, swc} -platform MacOS-x86 library.swf #{framework_name}"
+      sh "#{File.join old_path, adt} -package -target ane #{File.join old_path, ane} #{File.join old_path, flashruby_xml} -swc #{File.join old_path, flashruby_swc} -platform MacOS-x86 library.swf #{framework_name}"
     end
   end
+end
+
+file ane_dir => ane do
+  rm_rf ane_dir
+  mkdir_p ane_dir
+  sh "unzip #{ane} -d #{ane_dir}"
 end
 
 file fruby => ane do
 end
 
-file firb => ane do
-  "#{mxmlc} -load-config+=firb/src/firb-app.xml -debug=#{configuration == 'debug'}"
+file firb => [:wipe, mxmlc, *firb_source, ane] do
+  sh "#{mxmlc} +configname=air -load-config+=#{firb_config} -debug=#{configuration == 'debug'} -output #{firb} -- #{firb_main}"
 end
 
 desc 'Start up a FlashRuby console'
-task :console => firb do
-  sh firb
+task :console => [firb, ane_dir] do
+  sh "#{adl} -runtime #{air3runtime} -profile extendedDesktop -extdir #{unpacked_extdir} #{firb_app} #{firb_bin}"
+end
+
+task :wipe do
+  rm_rf "#{Dir.home}/.rbx"
 end
 
 task :default => :console
@@ -185,30 +207,3 @@ namespace :rubinius do
     end
   end
 end
-
-desc "Extract library.swf from FlashRubyCore.swc"
-task :library_swf do
-  sh "unzip -uo FlashRuby/bin-debug/FlashRuby.swc library.swf"
-end
-
-desc "Copy framework file to work directory"
-task :framework do
-  framework = Dir["#{Dir.home}/Library/Developer/Xcode/DerivedData/FlashRuby-*/Build/Products/Debug/FlashRuby.framework"].max_by do |file|
-    File.new(file).mtime
-  end
-  sh "rm -rf FlashRuby.framework"
-  sh "cp -r '#{framework}' FlashRuby.framework"
-end
-
-desc "Build the ANE file"
-task :ane => [:library_swf] do
-  sh "AdobeAIRSDK/bin/adt -package -target ane FlashRuby.ane FlashRuby/xml/extension.xml -swc FlashRuby/bin-debug/FlashRuby.swc -platform MacOS-x86 library.swf FlashRuby.framework"
-end
-
-task :default => [:framework, :ane]
-
-mxmlc 'FlashRubyHost/bin-debug/FlashRubyHost.swf' do |t|
-  t.input = 'src/FlashRubyHost.as'
-end
-
-flashplayer :test => 'FlashRubyHost/bin-debug/FlashRubyHost.swf'

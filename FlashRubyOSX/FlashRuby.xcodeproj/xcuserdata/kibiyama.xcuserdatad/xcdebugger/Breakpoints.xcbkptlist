@@ -4,16 +4,42 @@
    version = "1.0">
    <FileBreakpoints>
       <FileBreakpoint
-         shouldBeEnabled = "Yes"
+         shouldBeEnabled = "No"
          ignoreCount = "0"
          continueAfterRunningActions = "No"
-         filePath = "../rubinius/vm/environment.cpp"
-         timestampString = "364942730.979797"
+         filePath = "../rubinius/vm/call_frame.cpp"
+         timestampString = "366408273.499921"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "314"
-         endingLineNumber = "314"
-         landmarkName = "Environment::start_signals()"
+         startingLineNumber = "20"
+         endingLineNumber = "20"
+         landmarkName = "CallFrame::CallFrame()"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "../rubinius/vm/call_frame.cpp"
+         timestampString = "366409303.7017"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "24"
+         endingLineNumber = "24"
+         landmarkName = "InterpreterCallFrame::InterpreterCallFrame()"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "../rubinius/vm/builtin/compiledmethod.cpp"
+         timestampString = "366414946.416704"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "188"
+         endingLineNumber = "188"
+         landmarkName = "CompiledMethod::default_executor(STATE, CallFrame* call_frame, Executable* exec, Module* mod, Arguments&amp; args)"
          landmarkType = "5">
       </FileBreakpoint>
       <FileBreakpoint
@@ -21,25 +47,12 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "FlashRuby/FlashRuby.cpp"
-         timestampString = "365971323.675944"
+         timestampString = "366422083.635963"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "27"
-         endingLineNumber = "27"
-         landmarkName = "FlashRubyContextEntryPoint(void** extDataToSet, FREContextInitializer* ctxInitializerToSet, FREContextFinalizer* ctxFinalizerToSet)"
-         landmarkType = "7">
-      </FileBreakpoint>
-      <FileBreakpoint
-         shouldBeEnabled = "Yes"
-         ignoreCount = "0"
-         continueAfterRunningActions = "No"
-         filePath = "FlashRuby/FlashRuby.cpp"
-         timestampString = "366002819.891263"
-         startingColumnNumber = "9223372036854775807"
-         endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "134"
-         endingLineNumber = "134"
-         landmarkName = "FlashRuby_init_vm(FREContext ctx, void* funcData, uint32_t _argc, FREObject _argv[])"
+         startingLineNumber = "97"
+         endingLineNumber = "97"
+         landmarkName = "FlashRuby_eval(FREContext ctx, void* funcData, uint32_t argc, FREObject argv[])"
          landmarkType = "7">
       </FileBreakpoint>
    </FileBreakpoints>

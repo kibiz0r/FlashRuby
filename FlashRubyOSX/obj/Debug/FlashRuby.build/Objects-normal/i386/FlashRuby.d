@@ -32,15 +32,31 @@ dependencies: \
   ../rubinius/vm/config_parser.hpp ../rubinius/vm/configuration.hpp \
   ../rubinius/vm/util/configuration.hpp \
   ../rubinius/vm/gen/config_variables.h ../rubinius/vm/on_stack.hpp \
+  ../rubinius/vm/call_frame.hpp ../rubinius/vm/vmmethod.hpp \
+  ../rubinius/vm/unwind_info.hpp \
+  ../rubinius/vm/builtin/compiledmethod.hpp \
+  ../rubinius/vm/builtin/executable.hpp \
   ../rubinius/vm/builtin/object.hpp ../rubinius/vm/lookup_data.hpp \
-  ../rubinius/vm/builtin/class.hpp ../rubinius/vm/builtin/fixnum.hpp \
-  ../rubinius/vm/builtin/integer.hpp ../rubinius/vm/builtin/bignum.hpp \
+  ../rubinius/vm/gc/code_resource.hpp \
+  ../rubinius/vm/gen/instruction_sizes.hpp \
+  ../rubinius/vm/stack_variables.hpp \
+  ../rubinius/vm/builtin/variable_scope.hpp \
+  ../rubinius/vm/object_utils.hpp ../rubinius/vm/exception.hpp \
+  ../rubinius/vm/gen/kind_of.hpp ../rubinius/vm/builtin/tuple.hpp \
+  ../rubinius/vm/builtin/exception.hpp ../rubinius/vm/dispatch.hpp \
+  ../rubinius/vm/arguments.hpp ../rubinius/vm/builtin/array.hpp \
+  ../rubinius/vm/builtin/fixnum.hpp ../rubinius/vm/builtin/integer.hpp \
+  ../rubinius/vm/builtin/bignum.hpp \
   ../rubinius/vendor/libtommath/tommath.h \
   ../rubinius/vendor/libtommath/tommath_class.h \
   ../rubinius/vendor/libtommath/tommath_superclass.h \
-  ../rubinius/vm/builtin/module.hpp ../rubinius/vm/builtin/string.hpp \
-  ../rubinius/vm/builtin/bytearray.hpp ../rubinius/vm/object_utils.hpp \
-  ../rubinius/vm/exception.hpp ../rubinius/vm/gen/kind_of.hpp \
-  ../rubinius/vm/builtin/symbol.hpp ../rubinius/vm/builtin/array.hpp \
-  ../rubinius/vm/builtin/system.hpp ../rubinius/vm/builtin/exception.hpp \
+  ../rubinius/vm/builtin/class.hpp ../rubinius/vm/builtin/module.hpp \
+  ../rubinius/vm/builtin/string.hpp ../rubinius/vm/builtin/bytearray.hpp \
+  ../rubinius/vm/builtin/symbol.hpp ../rubinius/vm/builtin/system.hpp \
+  ../rubinius/vm/builtin/thread.hpp ../rubinius/vm/signal.hpp \
+  ../rubinius/vm/builtin/randomizer.hpp ../rubinius/vm/util/random.h \
+  ../rubinius/vm/builtin/lookuptable.hpp \
+  ../rubinius/vm/builtin/nativemethod.hpp ../rubinius/vm/capi/tag.hpp \
+  ../rubinius/vm/capi/18/include/mri_oop.h ../rubinius/vm/capi/value.hpp \
+  ../rubinius/vm/capi/handle.hpp \
   ../rubinius/vm/builtin/constantscope.hpp
